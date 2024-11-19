@@ -1,0 +1,255 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+  rel="stylesheet">
+
+
+  
+
+<div class="page  ">
+
+<div>
+  <div class="page-header">
+
+    <h2 *ngIf="lang=='en'">Governance</h2>
+    
+    <h2 *ngIf="lang=='ar'">arabic</h2>
+
+    <diV *ngIf="lang=='en'"  class="description mb-5">
+      <p class="t">
+        Governance is considered an essential part of the core values of Nama Company, playing an essential role in
+        enhancing integrity, transparency, responsibility, and efficiency in the company's performance, In accordance to
+        the laws and regulations of the countries where Namah work on; in Egypt and Saud Arabia.
+
+
+        The key principles governance at Namaa are:
+
+        Ensuring Accountability and Transparency: Building mutual trust through accountability and
+        transparency among all officials and employees.
+
+        Clarifying Duties and Responsibilities: Accurately defining the duties and responsibilities of
+        each employee to achieve goals efficiently.
+
+        Updating Records and Compliance: Ensuring that legal records are up-to-date and fully
+        compliant with regulations and policies, including adherence to the Ministry of Investment
+        and International Cooperation in Egypt and the Ministry of Investment in Saudi Arabia.
+
+        Ethics and Professional Conduct: Promoting a culture of ethics and professional conduct
+        by establishing a clear code of conduct and training employees to adhere to it.
+
+        Compliance with Laws and Regulations: Adhering to all local and international laws and
+        regulations, including financial market laws and environmental practices.
+
+        Continuous Improvement: The company’s commitment to continuously improving
+        governance practices to adopt global best practices.
+      </p>
+    </diV>
+
+    <diV *ngIf="lang=='ar'"  class="description mb-5">
+      <p class="t">
+     arabicdd ff ffffffffffffffffffffffffffffffffffffffff ffffgffffv  frfrr r r r  rr  r rrr  rr 
+      </p>
+    </diV>
+
+
+  </div>
+</div>
+
+  <div class="page-body">
+
+    <div class="list ">
+
+      <ul>
+
+        <button  *ngIf="lang=='en'" class="TitleList" (click)="flipArrow()" ((click))="reFlipArrow()" (click)="toggleList()">The
+          company's commercial register
+          <img src="../../../assets/Images/dropdown-icon.svg" alt="dropdown-icon">
+        </button>
+
+        <button  *ngIf="lang=='ar'" class="TitleList" (click)="flipArrow()" ((click))="reFlipArrow()" (click)="toggleList()">Arabic00
+          <img src="../../../assets/Images/dropdown-icon.svg" alt="dropdown-icon">
+        </button>
+
+
+        <div [ngClass]="{'list-content-visible': isListVisible, 'list-content-hidden': !isListVisible}"
+          class="list-content">
+          <div>
+            <li><button>
+                <img src="../../../assets/Images/governance-pdf-icon.svg" alt="pdf-icon">
+                <a href="https://shorturl.at/FBvGk" target="_blank">https://shorturl.at/FBvGk</a></button></li>
+          </div>
+        </div>
+
+        <button *ngIf="lang=='en'" class="TitleList" (click)="flipArrow2()" (mouseleave)="reFlipArrow2()" (click)="toggleList2()">The
+          company's Classification certificate
+          <img src="../../../assets/Images/dropdown-icon.svg" alt="dropdown-icon">
+        </button>
+
+        
+        <button *ngIf="lang=='ar'" class="TitleList" (click)="flipArrow2()" (mouseleave)="reFlipArrow2()" (click)="toggleList2()">arabic
+     
+          <img src="../../../assets/Images/dropdown-icon.svg" alt="dropdown-icon">
+        </button>
+
+
+        <div [ngClass]="{'list-content-visible': isListVisible2, 'list-content-hidden': !isListVisible2}"
+          class="list-content">
+          <div>
+            <li><button>
+                <img src="../../../assets/Images/governance-pdf-icon.svg" alt="pdf-icon">
+                <a href="https://kharetatalenmaa.sa/Certificates/%D8%AA%D8%B5%D9%86%D9%8A%D9%81%20%D9%85%D8%AF%D9%86.pdf"
+                  target="_blank">https://kharetatalenmaa.sa/Certificates.pdf</a>
+              </button></li>
+          </div>
+        </div>
+
+        <button *ngIf="lang=='en'" class="TitleList" (click)="flipArrow3()" (mouseleave)="reFlipArrow3()"
+          (click)="toggleList3()">Governance
+          <img src="../../../assets/Images/dropdown-icon.svg" alt="dropdown-icon">
+        </button>
+
+        <button *ngIf="lang=='ar'" class="TitleList" (click)="flipArrow3()" (mouseleave)="reFlipArrow3()"
+        (click)="toggleList3()">Hawkmaa
+        <img src="../../../assets/Images/dropdown-icon.svg" alt="dropdown-icon">
+      </button>
+
+
+        <div [ngClass]="{'list-content-visible': isListVisible3, 'list-content-hidden': !isListVisible3}"
+          class="list-content">
+          <div>
+            <li>
+              <button *ngIf="lang=='en'">
+                <img src="../../../assets/Images/governance-pdf-icon.svg" alt="pdf-icon">
+                <a href="https://kharetatalenmaa.sa/pdfs/%D9%82%D8%B1%D8%A7%D8%B1%20%D8%AA%D8%B4%D9%83%D9%8A%D9%84%20%D9%84%D8%AC%D9%86%D8%A9%20%D8%A7%D9%84%D8%B1%D9%82%D8%A7%D8%A8%D8%A9%20%D9%88%D8%A7%D9%84%D8%AC%D9%88%D8%AF%D8%A9%20%D9%88%D8%A7%D9%84%D8%A7%D9%85%D8%AA%D8%AB%D8%A7%D9%84.pdf"
+                  target="_blank">Decision to form the Oversight, Quality and Compliance Committee</a>
+              </button>
+
+              <button *ngIf="lang=='ar'">
+                <img src="../../../assets/Images/governance-pdf-icon.svg" alt="pdf-icon">
+                <a href="https://kharetatalenmaa.sa/pdfs/%D9%82%D8%B1%D8%A7%D8%B1%20%D8%AA%D8%B4%D9%83%D9%8A%D9%84%20%D9%84%D8%AC%D9%86%D8%A9%20%D8%A7%D9%84%D8%B1%D9%82%D8%A7%D8%A8%D8%A9%20%D9%88%D8%A7%D9%84%D8%AC%D9%88%D8%AF%D8%A9%20%D9%88%D8%A7%D9%84%D8%A7%D9%85%D8%AA%D8%AB%D8%A7%D9%84.pdf"
+                  target="_blank">Arabic</a>
+              </button>
+
+
+            </li>
+          </div>
+          <div>
+            <li>
+              <button *ngIf="lang=='en'">
+                <img src="../../../assets/Images/governance-pdf-icon.svg" alt="pdf-icon">
+                <a href="https://kharetatalenmaa.sa/pdfs/%D9%82%D8%B1%D8%A7%D8%B1%20%D8%AA%D8%B4%D9%83%D9%8A%D9%84%20%D9%84%D8%AC%D9%86%D8%A9%20%D8%A7%D9%84%D8%AA%D8%B1%D8%B4%D9%8A%D8%AD%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%81%D8%A3%D8%AA.pdf"
+                  target="_blank">The decision to form the Nominations and Remuneration Committee</a>
+              </button>
+
+              <button *ngIf="lang=='ar'">
+                <img src="../../../assets/Images/governance-pdf-icon.svg" alt="pdf-icon">
+                <a href="https://kharetatalenmaa.sa/pdfs/%D9%82%D8%B1%D8%A7%D8%B1%20%D8%AA%D8%B4%D9%83%D9%8A%D9%84%20%D9%84%D8%AC%D9%86%D8%A9%20%D8%A7%D9%84%D8%AA%D8%B1%D8%B4%D9%8A%D8%AD%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%81%D8%A3%D8%AA.pdf"
+                  target="_blank">arabic</a>
+              </button>
+
+            </li>
+          </div>
+          <div>
+            <li>
+              <button *ngIf="lang=='en'">
+                <img src="../../../assets/Images/governance-pdf-icon.svg" alt="pdf-icon">
+                <a href="https://kharetatalenmaa.sa/pdfs/%D9%82%D8%B1%D8%A7%D8%B1%20%D8%AA%D8%B4%D9%83%D9%8A%D9%84%20%D8%A7%D9%84%D9%84%D8%AC%D9%86%D8%A9%20%D8%A7%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0%D9%8A%D8%A9.pdf"
+                  target="_blank">Decision to form the Executive Committee</a>
+              </button>
+
+              <button *ngIf="lang=='ar'">
+                <img src="../../../assets/Images/governance-pdf-icon.svg" alt="pdf-icon">
+                <a href="https://kharetatalenmaa.sa/pdfs/%D9%82%D8%B1%D8%A7%D8%B1%20%D8%AA%D8%B4%D9%83%D9%8A%D9%84%20%D8%A7%D9%84%D9%84%D8%AC%D9%86%D8%A9%20%D8%A7%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0%D9%8A%D8%A9.pdf"
+                  target="_blank">arabic</a>
+              </button>
+
+            </li>
+          </div>
+          <div>
+            <li>
+              <button *ngIf="lang=='en'">
+                <img src="../../../assets/Images/governance-pdf-icon.svg" alt="pdf-icon">
+                <a href="https://kharetatalenmaa.sa/pdfs/%D9%85%D8%AD%D8%B6%D8%B1%20%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%20%D9%85%D8%AC%D9%84%D8%B3%20%D8%A7%D9%84%D8%A7%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%B1%D9%82%D9%85%2002-02%20%D9%84%D8%B3%D9%86%D8%A9%202023%20.pdf"
+                  target="_blank">Minutes of Board of Directors Meeting No. 02-02 of 2023</a>
+              </button>
+
+              <button *ngIf="lang=='ar'">
+                <img src="../../../assets/Images/governance-pdf-icon.svg" alt="pdf-icon">
+                <a href="https://kharetatalenmaa.sa/pdfs/%D9%85%D8%AD%D8%B6%D8%B1%20%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%20%D9%85%D8%AC%D9%84%D8%B3%20%D8%A7%D9%84%D8%A7%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%B1%D9%82%D9%85%2002-02%20%D9%84%D8%B3%D9%86%D8%A9%202023%20.pdf"
+                  target="_blank">arabic</a>
+              </button>
+
+
+            </li>
+          </div>
+          <div>
+            <li>
+              <button *ngIf="lang=='en'">
+                <img src="../../../assets/Images/governance-pdf-icon.svg" alt="pdf-icon">
+                <a href="https://kharetatalenmaa.sa/pdfs/%D9%85%D8%AD%D8%B6%D8%B1%20%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%20%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%A1%20%D8%B1%D9%82%D9%85%2001%20%D9%84%D8%B9%D8%A7%D9%85%202023.pdf"
+                  target="_blank">Minutes of Partners Meeting No. 01 of 2023</a>
+              </button>
+
+              <button *ngIf="lang=='ar'">
+                <img src="../../../assets/Images/governance-pdf-icon.svg" alt="pdf-icon">
+                <a href="https://kharetatalenmaa.sa/pdfs/%D9%85%D8%AD%D8%B6%D8%B1%20%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%20%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%A1%20%D8%B1%D9%82%D9%85%2001%20%D9%84%D8%B9%D8%A7%D9%85%202023.pdf"
+                  target="_blank">arabicc</a>
+              </button>
+
+            </li>
+          </div>
+          <div>
+            <li>
+              <button *ngIf="lang=='en'">
+                <img src="../../../assets/Images/governance-pdf-icon.svg" alt="pdf-icon">
+                <a href="https://kharetatalenmaa.sa/pdfs/%D9%82%D8%B1%D8%A7%D8%B1%20%D8%AA%D8%B4%D9%83%D9%8A%D9%84%20%D9%84%D8%AC%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D8%AC%D8%B9%D8%A9%20%D9%88%D8%A7%D9%84%D9%85%D8%AE%D8%A7%D8%B7%D8%B1.pdf"
+                  target="_blank">Decision to form the Audit and Risk Committee.</a>
+              </button>
+
+              <button *ngIf="lang=='ar'">
+                <img src="../../../assets/Images/governance-pdf-icon.svg" alt="pdf-icon">
+                <a href="https://kharetatalenmaa.sa/pdfs/%D9%82%D8%B1%D8%A7%D8%B1%20%D8%AA%D8%B4%D9%83%D9%8A%D9%84%20%D9%84%D8%AC%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D8%AC%D8%B9%D8%A9%20%D9%88%D8%A7%D9%84%D9%85%D8%AE%D8%A7%D8%B7%D8%B1.pdf"
+                  target="_blank">arabiiviv</a>
+              </button>
+
+            </li>
+          </div>
+        </div>
+
+        <button *ngIf="lang=='en'" class="TitleList" (click)="flipArrow4()" (mouseleave)="reFlipArrow4()" (click)="toggleList4()">Investor
+          relations
+          <img src="../../../assets/Images/dropdown-icon.svg" alt="dropdown-icon">
+        </button>
+
+        <button *ngIf="lang=='ar'" class="TitleList" (click)="flipArrow4()" (mouseleave)="reFlipArrow4()" (click)="toggleList4()">
+          arabic Re
+          <img src="../../../assets/Images/dropdown-icon.svg" alt="dropdown-icon">
+        </button>
+
+
+        <div [ngClass]="{'list-content-visible': isListVisible4, 'list-content-hidden': !isListVisible4}"
+          class="list-content">
+          <div>
+            <li>
+              <button *ngIf="lang=='en'">
+                <img src="../../../assets/Images/governance-pdf-icon.svg" alt="pdf-icon">
+                <a href="https://kharetatalenmaa.sa/pdfs/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D8%AC%D8%B9%20%D8%B9%D9%86%20%D9%85%D9%8A%D8%B2%D8%A7%D9%86%D9%8A%D8%A9%20%D8%B9%D8%A7%D9%85%202022.pdf"
+                  target="_blank">The auditor's approved report</a>
+              </button>
+
+              <button *ngIf="lang=='ar'">
+                <img src="../../../assets/Images/governance-pdf-icon.svg" alt="pdf-icon">
+                <a href="https://kharetatalenmaa.sa/pdfs/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D8%AC%D8%B9%20%D8%B9%D9%86%20%D9%85%D9%8A%D8%B2%D8%A7%D9%86%D9%8A%D8%A9%20%D8%B9%D8%A7%D9%85%202022.pdf"
+                  target="_blank">arabbbic</a>
+              </button>
+
+            </li>
+          </div>
+        </div>
+
+      </ul>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,95 @@
+<div class="image-drop">
+
+  <div class="wrap_h2">
+    <h2 *ngIf="lang=='en'" >{{ProjectInfo.project_Name}} </h2>
+    <h2 class="description" *ngIf="lang=='ar'" >{{ProjectInfo.project_Name_ar}} </h2>
+
+  </div>
+
+
+  <div class="cover-img ">
+    <!-- <img src="../../../assets/Images/place-holder-1.png" alt="cover"> -->
+    <!-- style=" height: auto; max-height: 800px; object-fit: contain;" -->
+
+    <!-- <img  class="scale-on-hover w-100"
+      [src]="ImgbaseUrl+'Projects/' + ProjectInfo.image_Name" alt="No Image"> -->
+
+
+    <!-- <img class="justify-content-center" [src]="ImgbaseUrl+'Projects/' + ProjectInfo.image_Name" alt="No Image"
+      style=" height: auto; max-height: 1000px; object-fit: contain;"> -->
+
+      <img class="justify-content-center" [src]="getSanitizedImageUrl(ProjectInfo)" alt="No Image"
+      style=" height: auto; max-height: 1000px; object-fit: contain;">
+
+
+   
+
+  </div>
+</div>
+
+
+<div class="container0 ">
+  <main class="m-5">
+    <span *ngIf="lang=='en' "  class="tc text-start">project-description</span>
+    <span class="direction w-100 tc"  *ngIf="lang=='ar'">تفاصيل المشروع</span>
+
+    <div class="w-75 m-auto w-100  ">
+      <p *ngIf="lang=='en'">
+        {{ ProjectInfo. project_Description || 'No description available.'}}
+      </p>
+
+      <p *ngIf="lang=='ar'" class="direction w-100">
+        {{ ProjectInfo. project_Description_ar || 'No description available.'}}
+      </p>
+
+    </div>
+  </main>
+
+  <aside>
+    <div *ngIf="lang=='en'" class="client">
+      <p>Client</p>
+      <p>{{ProjectInfo.client_Name}}</p>
+    </div>
+
+    <div *ngIf="lang=='ar'" class="client">
+      <h3>العميل</h3>
+      <p>{{ProjectInfo.client_Name}}</p>
+    </div>
+
+
+    <div *ngIf="lang=='en'" class="location">
+      <p>Location</p>
+      <p>{{ProjectInfo.location}}</p>
+    </div>
+
+    <div *ngIf="lang=='ar'" class="">
+      <h3>الموقع</h3>
+      <p>{{ProjectInfo.location}}</p>
+    </div>
+
+
+
+
+    <div class="share">
+      <p>Share This Project</p>
+
+      <a href="#" target="_blank">
+        <img src="../../assets/Images/soical-media-icons/Twitter.svg" alt="Twitter">
+      </a>
+      <a href="" target="_blank">
+        <img src="../../assets/Images/soical-media-icons/Linkedin.svg" alt="Linkedin">
+      </a>
+      <a href="" target="_blank">
+        <img src="../../assets/Images/soical-media-icons/Facebook.svg" alt="Facebook">
+      </a>
+    </div>
+    <hr>
+    <div class="more-projects">
+      <span>More Projects</span>
+      <div class="project" (click)="allprojects()">
+        <img src="../../../assets/Images/place-holder-1.png" alt="project">
+        <p>More Projects</p>
+      </div>
+    </div>
+  </aside>
+</div>

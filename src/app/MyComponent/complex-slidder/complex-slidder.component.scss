@@ -1,0 +1,88 @@
+// .m
+// {
+//     margin: 100px;
+// }
+
+carousel-item {
+  width: 100% !important;
+  background-color: blue;
+}
+
+.top img {
+  width: 100% !important;
+  height: 300px !important;
+}
+
+
+.more {
+  border: none;
+  display: flex;
+  justify-content: left;
+  padding: 0;
+}
+
+
+.more:hover p {
+  padding-left: 20px;
+  transition: all;
+  transition-duration: 1s;
+}
+
+.more p {
+  transition: padding-left 1s ease;
+
+}
+
+
+p button {
+  background-color: transparent;
+  color: #002C5F;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27px;
+
+}
+
+.slide-text p {
+  color: #5B5B5B;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.6875rem;
+}
+
+.carousel-inner {
+  height: auto;
+}
+
+// #carouselExampleIndicators {
+//   position: relative;
+// }
+
+
+// .carousel-control-prev,
+// .carousel-control-next {
+//   position: absolute;
+//   bottom: -50px;
+//   /* Adjust this value to move the buttons down */
+//   width: auto;
+//   /* Set width for buttons */
+// }
+
+// .carousel-control-prev {
+//   left: 30%;
+//   /* Adjust to control horizontal position */
+// }
+
+// .carousel-control-next {
+//   right: 30%;
+//   /* Adjust to control horizontal position */
+// }
+
+
+.fs{
+  font-size: 20px !important;
+}

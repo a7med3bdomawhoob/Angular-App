@@ -1,0 +1,141 @@
+.page {
+  padding: 4rem 6rem;
+}
+
+.page-header h2 {
+  color: #0A3465;
+  text-align: left;
+  font-family: Inter;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.6875rem;
+}
+
+.page-header .paragraph p {
+  color: #000;
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.6875rem;
+  margin: 3rem 0;
+  justify-content: center;
+}
+
+.row {
+  flex-wrap: wrap;
+}
+
+.page-body .card {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  width: fit-content;
+  overflow: hidden;
+  border: none;
+  margin: 0 1.5rem;
+  cursor: pointer;
+}
+
+.card .card-img {
+  position: relative;
+  width: fit-content;
+}
+
+.card .card-img img {
+  transition: opacity 0.3s ease;
+}
+
+.card .card-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0rem 0rem var(--Corner-Small, 0.5rem) var(--Corner-Small, 0.5rem);
+  background: rgba(59, 92, 138, 0.75);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+}
+
+.card .card-info h4 {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 1.0875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.79438rem;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+
+.card .card-info p {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 0.87rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.79438rem;
+  text-transform: capitalize;
+}
+
+.card-img:hover .card-info {
+  opacity: 1;
+}
+
+.modal-over {
+}
+
+.modal {
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.6); /* White background with transparency */
+  backdrop-filter: blur(10px); /* Blur the background */
+
+}
+
+.modal-header {
+  border: none;
+  width: 100%;
+}
+
+
+.modal-dialog {
+  max-width: 100%;
+  width: 75%;
+  margin: auto;
+}
+
+.modal-content {
+  height: fit-content;
+}
+
+.description {
+  text-wrap: wrap;
+  color: #000;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.25rem;
+}
+
+.card-img {
+  transition: transform 0.4s ease-in-out;
+}
+
+.card-img:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s ease-in-out;
+}
+
+
+.t{
+  text-align: justify;      /* Justify text for even spacing */
+  margin: 0 auto;          /* Centers the block itself */
+  line-height: 1.5;   
+}

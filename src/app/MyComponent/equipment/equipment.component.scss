@@ -1,0 +1,133 @@
+.page {
+  padding: 5% 7%;
+}
+
+.page-header {
+  margin-bottom: 5rem;
+}
+
+.page-header h2 {
+  color: #0A3465;
+  text-align: left;
+  font-family: Inter;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.6875rem;
+}
+
+.page-header p {
+  color: #000;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+.row {
+  margin-bottom: 5rem;
+}
+
+.row h2 {
+  color: #0A3465;
+  text-align: center;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27px;
+  margin-bottom: 3rem;
+}
+
+.description p {
+  color: #333;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  margin-bottom: 3rem;
+  text-align: justify;
+}
+
+.description button {
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  width: 134.34px;
+  height: 48px;
+  border: none;
+  background: #17395E;
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 27px;
+  transition: 0.5s;
+}
+
+.description button:hover {
+  background: #265D99;
+  transform: scale(1.03);
+}
+
+.row .picture {
+  overflow: hidden;
+  height: 30rem;
+  width: 38rem;
+  border-radius: 4px !important;
+}
+
+.image-drop {
+
+  opacity: 0;
+  /* Initially invisible */
+  transform: scale(0);
+  /* Start from a very small scale (centered) */
+  animation: zoomAnimation 1s ease-out forwards;
+  /* Animation properties */
+  transform-origin: center center;
+  /* Ensure scaling happens from the center */
+}
+
+@keyframes zoomAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+    /* Start with the image very small */
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    /* End at the normal size */
+  }
+}
+
+
+.t{
+  text-align: justify;      /* Justify text for even spacing */
+  margin: 0 auto;          /* Centers the block itself */
+  line-height: 1.5;   
+}
+
+img {
+  transition: transform 0.5s ease-in-out; /* Apply smooth transition */
+}
+
+.picture:hover img {
+  transform: scale(1.1); /* Zoom in effect on hover */
+}
+
+/* Ensure that the hover effect is applied regardless of where the image is in the layout */
+.col-md-6:hover .picture img {
+  transform: scale(1.1); /* Ensuring the second image also zooms */
+}
+
+
+.direction{
+  direction: rtl;
+}

@@ -1,0 +1,25 @@
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 48;
+  font-style: normal;
+}
+
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 48;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.foot {
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+}
+
+.transparent {
+  background-color: transparent;
+}

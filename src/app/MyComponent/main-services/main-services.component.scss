@@ -1,0 +1,103 @@
+.page {
+  padding: 50px 100px;
+}
+
+header {
+  margin-bottom: 50px;
+}
+
+h2 {
+  color: #0A3465;
+  text-align: center;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27px;
+  line-height: 40px;
+}
+
+header h2 {
+  text-align: left;
+}
+
+p {
+  align-self: stretch;
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: justify;
+}
+
+section {
+  margin: 100px 0;
+}
+
+
+
+section button {
+  background: #17395E;
+  color: white;
+  width: 134.34px;
+  height: 48px;
+  margin: 100px 0 50px;
+  border-radius: 8px;
+  // padding: 11px 24px 10px 26.34px;
+  justify-content: center;
+  align-items: center;
+  border-style: none;
+}
+
+section button:hover {
+  background: #265D99;
+}
+
+
+.ImgCard  {
+  //  background: linear-gradient(to right, #f0f4f8, #d9e2ec); /* Light blue-gray tones */
+  height: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+
+}
+
+.ImgCard img {
+  transition: 0.5s;
+}
+
+
+.ImgCard:hover {
+  transform: scale(1.05);
+}
+
+//////////////////////
+///
+.image-zoom {
+  opacity: 0;
+  /* Initially invisible */
+  transform: scale(0);
+  /* Start from a very small scale (centered) */
+  animation: zoomAnimation 1s ease-out forwards;
+  /* Animation properties */
+  transform-origin: center center;
+  /* Ensure scaling happens from the center */
+}
+
+@keyframes zoomAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+    /* Start with the image very small */
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    /* End at the normal size */
+  }
+}
+
+

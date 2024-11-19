@@ -1,0 +1,61 @@
+.w {
+  width: 90%;
+}
+
+.page-header h2 {
+  color: #0A3465;
+  text-align: left;
+  font-family: Inter;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.6875rem;
+}
+
+.img-cover {
+  margin: 2rem 0 3rem;
+}
+
+.row h2 {
+  color: #0A3465;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.6875rem;
+}
+
+.row p {
+  color: #000;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.6875rem;
+  text-align: justify;
+}
+
+
+.image-zoom {
+    opacity: 0; /* Initially invisible */
+    transform: scale(0); /* Start from a very small scale (centered) */
+    animation: zoomAnimation 1s ease-out forwards; /* Animation properties */
+    transform-origin: center center; /* Ensure scaling happens from the center */
+  }
+  
+  @keyframes zoomAnimation {
+    0% {
+      opacity: 0;
+      transform: scale(0); /* Start with the image very small */
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1); /* End at the normal size */
+    }
+  }
+  
+
+  .direction{
+    direction: rtl;
+    padding-right: 100px;
+  }

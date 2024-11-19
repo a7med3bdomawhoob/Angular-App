@@ -1,0 +1,69 @@
+<div class="image-drop ">
+
+<div class="wrap_h2">
+  <h2 *ngIf="lang=='en'">{{project_Name}} </h2>
+  <h2 *ngIf="lang=='ar'">{{project_Name_ar}} </h2>
+</div>
+
+
+
+  <div class="cover-img ">
+    <!-- <img src="../../../assets/Images/place-holder-1.png" alt="cover"> -->
+    <img [src]="RealImage[0]" alt="no image">
+  </div>
+</div>
+
+<div class="container image-drop  ">
+  <main class="">
+    <span class="" *ngIf="lang=='en'">project-description</span>
+    <span class="w-100  mb-2 text-end" *ngIf="lang=='ar'">تفاصيل المشروع</span>
+    <div class="w-100  d">
+      <p class="" *ngIf="lang=='en'">
+        {{project_Description || 'No description available.'}}
+      </p>
+
+<div class="d">
+  <p class="d" *ngIf="lang=='ar'">
+    {{project_Description_ar || 'No description available.'}}
+  </p>
+</div>
+
+    </div>
+  </main>
+
+  <aside>
+    <div class="client">
+      <p>Client</p>
+      <p>{{client_Name}}</p>
+    </div>
+
+    <div class="location">
+      <p>Location</p>
+      <p>{{location}}</p>
+    </div>
+
+
+
+    <div class="share">
+      <p>Share This Project</p>
+
+      <a href="#" target="_blank">
+        <img src="../../assets/Images/soical-media-icons/Twitter.svg" alt="Twitter">
+      </a>
+      <a href="" target="_blank">
+        <img src="../../assets/Images/soical-media-icons/Linkedin.svg" alt="Linkedin">
+      </a>
+      <a href="" target="_blank">
+        <img src="../../assets/Images/soical-media-icons/Facebook.svg" alt="Facebook">
+      </a>
+    </div>
+    <hr>
+    <div class="more-projects">
+      <span>More Projects</span>
+      <div class="project1">
+        <img class="cursor" (click)="ReturnToProjectPage()" src="../../../assets/Images/th.jfif" alt="project">
+        <p>more ...</p>
+      </div>
+    </div>
+  </aside>
+</div>

@@ -1,0 +1,115 @@
+<div class="page">
+
+  <div class="page-header">
+    <h2 *ngIf="lang=='en'">Careers</h2>
+
+    <h2 class="text-end" *ngIf="lang=='ar'">وظائف</h2>
+
+    <p  *ngIf="lang=='en'">
+
+      Join our team at Namaa Consult and be part of an innovative and dynamic environment where your skills and
+      talents can make a real impact. We are currently looking for passionate and qualified professionals to fill a
+      variety of positions across our key service areas, including Asset Management, Infrastructure and
+      Transportation, Urban Planning, Architecture and Construction Engineering, Management and Construction
+      Supervision, and Information Technology. If you are ready to take your career to the next level and contribute
+      to transformative projects, we invite you to explore our available opportunities and apply today. Send your
+      resume and cover letter to [email address] to start your journey with us.
+    </p>
+
+
+    <p class="text-end m-3" dir="rtl " *ngIf="lang=='ar'">
+
+      arabic
+    </p>
+
+    <button class="open-positions" (click)="showContent('open-positions')"
+      [class.active]="selectedContent === 'open-positions'">Open
+      Positions</button>
+    <button class="apply-anyways" (click)="showContent('apply-anyways')"
+      [class.active]="selectedContent === 'apply-anyways'">Apply
+      Anyways</button>
+
+    <hr>
+  </div>
+
+  <div class="page-body">
+
+    <div *ngIf="selectedContent === 'open-positions'">
+      <!-- Filteration -->
+      <div class="filter row justify-content-between">
+
+        <select (change)="Filter($event)" class="col-md-3" name="Job_Title" id="Job_Title">
+          <option value="" disabled selected>Job Title</option>
+          <option *ngFor="let obj of FilterationObject ;let i=index" [value]="obj.job_Title">{{obj.job_Title}}</option>
+
+        </select>
+
+        <select (change)="Filter($event)" class="col-md-3" name="Location" id="Location">
+          <option value="" disabled selected>Location</option>
+          <option *ngFor="let obj of FilterationObject ;let i=index" [value]="obj.location">{{obj.location}}</option>
+        </select>
+
+        <select (change)="Filter($event)" class="col-md-3" name="Time_Type" id="Time_Type">
+          <option value="" disabled selected>Time Type</option>
+          <option *ngFor="let obj of FilterationObject ;let i=index" [value]="obj.time_Type">{{obj. time_Type}}</option>
+        </select>
+
+        <div class="apply col-md-3">
+          <button (click)="Apply()">Apply</button>
+        </div>
+      </div>
+      <div class="job-container">
+
+        <div class="row justify-content-center ">
+
+          <div class="card col-md-3  m-5" *ngFor="let job of JobInfo ;let i=index">
+            <h4>{{JobInfo[i].job_Title}}</h4>
+            <div class="pic-text d-flex">
+              <img src="../../../assets/Images/bag-Icon.svg" alt="">
+              <p>{{job.time_Type}}</p>
+            </div>
+            <div class="pic-text d-flex">
+              <img src="../../../assets/Images/Location-Point-icon.svg" alt="">
+              <p>{{job.location}}</p>
+            </div>
+            <div class="pic-text d-flex">
+              <img src="../../../assets/Images/Calendar-Note-icon.svg" alt="">
+              <p>{{job.date}}</p>
+            </div>
+            <div class="d-flex button">
+              <button (click)="ShowDes(job.job_Id)">Apply Now <img src="../../../assets/Images/Chevron-Down-icon.svg"
+                  alt=""></button>
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+
+    </div>
+    <div *ngIf="selectedContent === 'apply-anyways'" class="apply-anyways">
+      <p *ngIf="lang=='en'">Join our dynamic team at Namaa Consult and be part of innovative projects that shape the future of
+        infrastructure and urban development. Explore our open positions and take the next step in your career with us.
+      </p>
+
+      <p class="text-end " *ngIf="lang=='ar'">قدم
+      </p>
+
+
+      <div class="sub-btn">
+
+
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mawhoobahmed99@gmail.com" target="_blank">Submit Your
+          Resume</a>
+
+
+
+        <!-- <button class="submit">submit your resume</button> -->
+
+      </div>
+    </div>
+  </div>
+  <h1 class="text-center alert alert-danger" *ngIf="NoAvailableJobs"> Sorry : No Available Jobs</h1>
+</div>

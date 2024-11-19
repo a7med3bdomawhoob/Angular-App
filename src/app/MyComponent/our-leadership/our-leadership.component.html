@@ -1,0 +1,360 @@
+<div class="page">
+
+  <div class="page-header">
+    <h2 *ngIf="lang=='en'">Our Leadership</h2>
+
+    <h2 *ngIf="lang=='ar'" class="text-end">فريق العمل</h2>
+
+
+    <div class="paragraph">
+      <p *ngIf="lang=='en'">
+        Our commitment to excellence is reflected in our optimal application of consulting services, addressing the most
+        pressing needs in the market.
+        At Namaa Consult, strong leadership is driven by the Board of Directors, which oversees corporate governance,
+        and the Operating Committee that guides our various businesses and functions.
+      </p>
+
+
+
+      <p class="text-end" *ngIf="lang=='ar'">
+        بالنيابة عن فريق العمل في شركة نماء، بما في ذلك الخبراء والمهندسين والفنيين والإداريين، يُشرفنا أن نقدم لكم
+        دليلًا
+        موجزًا للتعريف بشركتنا وقادتها ورؤيتنا لتحقيق التكامل الإبداعي بين مجالات الهندسة، من أجل تقديم حلول رائدة
+        ومبتكرة.
+      </p>
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+  <div class="page-body">
+    <div class="row justify-content-between">
+      <div class="col-md-3">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#Eng-Alaa-Modal">
+          <div class="card-img">
+            <img class="w-100" src="../../../assets/Images/Eng-Alaa.png" alt="Eng-Alaa">
+            <div *ngIf="lang=='en'" class="card-info">
+              <h4>Eng. Alaa Maarouf</h4>
+              <p>Dupty Chairman</p>
+            </div>
+
+            <div *ngIf="lang=='ar'" class="card-info">
+              <h4>المهندس علاء معروف عبد الصمد</h4>
+              <p>المهندس علاء معروف عبد الصمد
+                نائب رئيس مجلس الإدارة</p>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+
+
+
+        <div *ngIf="lang=='en'" class="card" data-bs-toggle="modal" data-bs-target="#Salh-Al-M’thm-Modal">
+          <div class="card-img">
+            <img class="w-100" src="../../../assets/Images/Eng.Salh-Al-M’thm.png" alt="Eng.Salh Al M’thm">
+            <div class="card-info">
+              <h4>Eng. Salh Al M’thm</h4>
+              <p>Managing Director , Saudi Arabia</p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div *ngIf="lang=='ar'" class="card" data-bs-toggle="modal" data-bs-target="#Salh-Al-M’thm-Modal">
+          <div class="card-img">
+            <img class="w-100" src="../../../assets/Images/Eng.Salh-Al-M’thm.png" alt="مهندس صالح المعثم">
+            <div class="card-info">
+              <h4>مهندس صالح المعثم</h4>
+              <p>نائب المدير العام ، المملكة العربية السعودية</p>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+      </div>
+      <div class="col-md-3">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#Abdul-Hakim-Al-Khalif-Modal">
+
+
+
+
+          <div *ngIf="lang=='en'" class="card-img">
+            <img class="w-100" src="../../../assets/Images/Eng. Abdul-Hakim-Al-Khalifa.png"
+              alt="Eng.Abdul Hakim Al-Khalifa">
+            <div class="card-info">
+              <h4>Eng. Abdul Hakim Al-Khalifa</h4>
+              <p>General Manager Deputy, Saudi Arabia</p>
+            </div>
+          </div>
+
+          <div *ngIf="lang=='ar'" class="card-img">
+            <img class="w-100" src="../../../assets/Images/Eng. Abdul-Hakim-Al-Khalifa.png"
+              alt="المهندس عبد الحكيم خليفة">
+            <div class="card-info">
+              <h4>المهندس عبد الحكيم خليفة</h4>
+              <p>مدير عام ، المملكة العربية السعودية</p>
+            </div>
+          </div>
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#Essam-Sharaf-Modal">
+
+
+
+          <div *ngIf="lang=='en'" class="card-img">
+            <img class="w-100" src="../../../assets/Images/Prof.Dr.Essam-Sharaf.png" alt="Prof.Dr. Essam-Sharaf">
+            <div class="card-info">
+              <h4>Prof.Dr. Essam-Sharaf</h4>
+              <p>Chairman</p>
+            </div>
+          </div>
+
+          <div *ngIf="lang=='ar'" class="card-img">
+            <img class="w-100" src="../../../assets/Images/Prof.Dr.Essam-Sharaf.png" alt="أ-دكتور عصام شرف
+            رئيس مجلس الإدارة	">
+            <div class="card-info">
+              <h4>-دكتور عصام شرف
+                رئيس مجلس الإدارة </h4>
+              <p>"د.عصام شرف حصل على درجة البكالوريوس من كلية الهندسة جامعة القاهرة
+              </p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="Eng-Alaa-Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <!-- <div class="modal-header justify-content-end">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div> -->
+          <div class="modal-body">
+            <div class="row d-flex justify-content-between ">
+              <div class="img-card col-md-3 align-content-center">
+                <img class="w-100 " src="../../../assets/Images/Eng-Alaa.png" alt="Eng-Alaa">
+              </div>
+              <div class="description col-md-9 align-content-center">
+                <p *ngIf="lang=='en'">
+                  In 1998, Eng. Marouf co-founded NAMAA Engineering Consultant and was a key player in the process of
+                  establishment. Under his directions NAMAA became recognized as one of the premier engineering
+                  consultant in Egypt, known for its ability to provide unique solutions for difficult projects. Eng.
+                  Alaa implemented the concept of partnering with clients and delivered successful projects through
+                  innovation and collaboration. Eng. Marouf has more than 24 years of heavy engineering experience.
+                  Directed many multifaceted transportation improvement projects, and has been involved in bridges
+                  serving highways, transit and traffic improvements. He holds a bachelor in Civil Engineering from
+                  Cairo University.
+                </p>
+
+                <p *ngIf="lang=='ar'">
+                  المهندس علاء معروف عبد الصمد
+                  نائب رئيس مجلس الإدارة
+
+                  المهندس علاء حاصل على بكالوريوس الهندسة المدنية من جامعة القاهرة.
+                  في عام 1998، شارك المهندس علاء في تأسيس شركة نماء للاستشارات
+                  الهندسية، حيث كان له دور أساسي في عملية التأسيس. تحت توجيهاته،
+                  أصبحت شركة نماء واحدة من الشركات الاستشارية الرائدة في مصر، والمعروفة
+                  بقدرتها على تقديم حلول فريدة للمشاريع الصعبة.
+
+                  المهندس علاء نفذ مفهوم الشراكة مع العملاء وحقق مشاريع ناجحة من خلال
+                  الابتكار والتعاون. المهندس علاء له أكثر من 24 عامًا من الخبرة في المجال الهندسي
+                  الواسع، حيث أدار العديد من مشاريع تحسين النقل متعددة الأوجه وشارك في
+                  تطوير الجسور لتحسين الطرق السريعة وأنظمة العبور والمرور.
+                </p>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="Salh-Al-M’thm-Modal" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <!-- <div class="modal-header justify-content-end">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div> -->
+          <div class="modal-body">
+            <div class="row d-flex justify-content-between ">
+              <div class="img-card col-md-3 align-content-center">
+                <img class="w-100 " src="../../../assets/Images/Eng.Salh-Al-M’thm.png" alt="Eng-Saleh">
+              </div>
+              <div class="description col-md-9 align-content-center">
+
+                <p *ngIf="lang=='en'">
+                  Engineer / Saleh obtained a Bachelor’s degree in Civil Engineering from King Saud University in 1985,
+                  a Master’s degree in Civil Engineering from King Saud University in 1995.
+                  Eng. Saleh worked as an engineer officer in the Ministry of Defense and Aviation for 22 years.
+                </p>
+
+                <p *ngIf="lang=='ar'">
+                  المهندس صالح المعثم
+                  نائب المدير العام ، المملكة العربية السعودية"
+                  حصل المهندس / صالح على درجة البكالوريوس في الهندسة
+                  المدنية من جامعة الملك سعود عام 1985،حاصل على درجة
+                  الماجستير في الهندسة المدنية من جامعة الملك سعود عام 1995.
+                  عمل المهندس صالح كضابط في وزارة الدفاع والطيران لمدة 22 عاما.
+                </p>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="Abdul-Hakim-Al-Khalif-Modal" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <!-- <div class="modal-header justify-content-end">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div> -->
+          <div class="modal-body">
+            <div class="row d-flex justify-content-between ">
+              <div class="img-card col-md-3 align-content-center">
+                <img class="w-100 " src="../../../assets/Images/Eng. Abdul-Hakim-Al-Khalifa.png"
+                  alt="Abdul-Hakim-Al-Khalifa">
+              </div>
+              <div class="description col-md-9 align-content-center">
+                <p *ngIf="lang=='en'">
+                  Engineer / Abdul Hakim obtained a Bachelor’s degree in Mechanical Engineering from King Saud
+                  University,
+                  a Bachelor’s degree in Military Sciences, a PhD in Saudi-French relations.
+                  The director of maintenance department worked in the operation and maintenance department at AlKharj
+                  base.
+                  Director of Procurement Department, Operation and Maintenance Department, Al-Kharj Base.
+                  Director of the Administrative Development Department, Operation and Maintenance Department
+                </p>
+
+                <p *ngIf="lang=='ar'">
+                  المهندس عبد الحكيم خليفة
+                  مدير عام ، المملكة العربية السعودية
+
+                  المهندس/ عبد الحكيم حاصل على درجة البكالوريوس في الهندسة الميكانيكية من جامعة الملك سعود،
+                  وحاصل على درجة البكالوريوس في العلوم العسكرية، ودكتوراه في العلاقات السعودية الفرنسية.
+                  عمل مدير قسم الصيانة في قسم التشغيل والصيانة بقاعدة الخرج.
+                  مدير إدارة المشتريات بإدارة التشغيل والصيانة بقاعدة الخرج.
+                  مدير إدارة التطوير الإداري ، إدارة التشغيل والصيانة.
+                </p>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="Essam-Sharaf-Modal" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <!-- <div class="modal-header justify-content-end">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div> -->
+          <div class="modal-body">
+            <div class="row d-flex justify-content-between ">
+              <div class="img-card col-md-3 align-content-center">
+                <img class="w-100 " src="../../../assets/Images/Prof.Dr.Essam-Sharaf.png" alt="Eng-Alaa">
+              </div>
+              <div class="description col-md-9 align-content-center">
+                <p *ngIf="lang=='en'">
+                  Dr. Essam Sharaf is a Professor of Highway Engineering at the College of Engineering, Cairo
+                  University, and the former Minister of Transport of Egypt. He earned his Bachelor's degree from Cairo
+                  University in 1975 and later obtained both his Master’s and Ph.D. from Purdue University, USA, in 1980
+                  and 1984, respectively.
+
+                  With a wealth of academic and research experience, Dr. Sharaf has supervised the research of
+                  approximately 70 Master's and Ph.D. students in Egypt and across the Arab region. He has published
+                  around 160 scientific papers and reports in national and international journals and conferences. His
+                  primary research focuses on Highway Management Systems, Road Safety Management Systems, and Transport
+                  Asset Management Systems.
+
+                  Dr. Sharaf is an active member of several national and international scientific and honorary
+                  societies. Among his numerous accolades, he has received three State Awards from the Egyptian Academy
+                  of Science and Technology and a Presidential Medal of Excellence from the President of Egypt.
+                  Additionally, he has been honored with multiple awards and certificates of merit from Cairo University
+                  and is a member of the prestigious Egyptian Scientific Institute.
+
+                  On a regional level, Dr. Sharaf was awarded the Rafik El-Hariri "Man of the Year" Award in Lebanon in
+                  2006. Internationally, he received the Distinguished Engineer Award from Purdue University in 2005 and
+                  became a Fellow of the Chartered Institute of Logistics and Transport in 2007.
+                </p>
+
+                <p *ngIf="lang=='ar'">
+                  أ-دكتور عصام شرف
+                  رئيس مجلس الإدارة
+
+                  "د.عصام شرف حصل على درجة البكالوريوس من كلية الهندسة جامعة القاهرة عام 1975 وتدرج في المناصب
+                  الأكاديمية حتى منصب
+                  أستاذ هندسة الطرق هندسة القاهرة.
+                  وقد حصل على درجتي الماجستير والدكتوراه في هندسة النقل من جامعة بوردو بالولايات المتحدة الأمريكية عامي
+                  1980 و 1984 على التوالي.
+                  وقد أشرف على حوالى 70 رسالة ماجستير ودكتوراه في الجامعات المصرية والعربية.
+                  وتضم مؤلفات د. عصام حوالى 160 بحث و تقرير منشورة في المجلات العلمية والمؤتمرات العالمية والمحلية.
+                  وكانت مجالات بحثه الأساسية هي:
+                  أنظمة إدارة الطرق السريعة، أنظمة إدارة سلامة الطرق، وأنظمة إدارة أصول النقل.
+                  شغل د. شرف منصب وزير النقل بجمهورية مصر العربية خلال عامي 2004 و2005 كما شغل منصب رئيس مجلس الوزراء
+                  المصري خلال عام 2011.
+                  وهو عضو بالعديد من الجمعيات العلمية والشرفية المحلية والدولية.
+                  كما أسس الدكتور شرف مؤسسة شرف للتنمية المستدامة في مصر كمؤسسة أهلية غير حكومية وغير هادفة للربح في عام
+                  2015.
+                  كما حصل د. شرف على العديد من الجوائز وأوجه التقدير على المستويات المحلية والإقليمية والدولية.
+                  من أهمها ما يلى: -
+                  • جائزة الدولة التشجيعية في العلوم الهندسية من أكاديمية البحث العلمي والتكنولوجيا بمصر عام 1987
+                  • نوط الامتياز من الطبقة الأولى من الرئيس المصري عام 1995
+                  • جائزة الدولة التشجيعية في العلوم الهندسية من أكاديمية البحث العلمي والتكنولوجيا بمصر عام 1997
+                  • حصل على جائزة رجل العام من مؤسسة رفيق الحريري اللبنانية عام 2003
+                  • و جائزة الشيخ عيسى بن على بن خليفة آل خليفة للعمل التطوعي – البحرين 2014
+                  • حصل على جائزة التميز في الهندسة من الولايات المتحدة الأمريكية عام 2005.
+                </p>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>

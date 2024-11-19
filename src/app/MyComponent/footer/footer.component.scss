@@ -1,0 +1,56 @@
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 48;
+  font-style: normal;
+}
+
+.lower-footer {
+  background-color: #EEE;
+  text-align: center;
+  align-items: center;
+  padding: 5px 0;
+  color: #17395E;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27.2px;
+  width: 100%;
+  height: fit-content;
+  position: static;
+  bottom: 0;
+
+}
+
+.website-routing button {
+  margin: 10px;
+  padding: 0 10px;
+  border-style: none;
+  color: #17395E;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.6rem;
+}
+
+.social-media-links a {
+  margin: 0 10px;
+  color: #555;
+  text-decoration: none;
+}
+
+.social-media-links img,
+.social-media-links i {
+  width: 50px;
+  height: 50px;
+  transition: 0.4s;
+  padding: 10px;
+}
+
+.social-media-links img:hover,
+.social-media-links i:hover {
+  transform: scale(1.1);
+}

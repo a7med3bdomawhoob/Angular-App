@@ -1,0 +1,77 @@
+<div class="page">
+
+  <div class="page-header">
+    <h2 *ngIf="lang=='en'">News</h2>
+    <h2 class="w-100 text-end" *ngIf="lang=='ar'">الاخبار</h2>
+
+  </div>
+
+
+
+
+
+
+
+  <div class="  row justify-content-center align-items-center">
+
+    <p *ngIf="lang=='en'" class="text  w-100">Integrating AI Technology and GIS for Advanced Road and Infrastructure Management
+
+      As part of its ongoing commitment to innovation in asset and infrastructure management, Namaa is proud to announce
+      the integration of Artificial Intelligence (AI) technology to detect cracks and distresses in paved roads. This
+      significant advancement allows for precise and efficient assessment of road conditions, enabling better
+      identification of maintenance needs and improving long-term road performance.
+
+      In addition, Namaa has integrated AI with Geographic Information Systems (GIS) to detect road assets such as
+      signs,
+      barriers, and light poles. This combination allows for continuous monitoring and updating of these assets,
+      facilitating data-driven decision-making and enhancing road maintenance and management.
+
+      These developments mark a major leap in Namaa’s ability to provide advanced, intelligent solutions for improving
+      infrastructure quality and increasing project efficiency to better serve cities and communities.
+      <br>
+    </p>
+
+
+    <p dir="rtl" *ngIf="lang=='ar'" class="text  w-100 ">
+      بالنيابة عن فريق العمل في شركة نماء، بما في ذلك الخبراء والمهندسين والفنيين والإداريين، يُشرفنا أن نقدم لكم
+      دليلًا
+      موجزًا للتعريف بشركتنا وقادتها ورؤيتنا لتحقيق التكامل الإبداعي بين مجالات الهندسة، من أجل تقديم حلول رائدة
+      ومبتكرة.
+      <br>
+    </p>
+
+
+  </div>
+
+
+
+
+
+
+
+  <div class="page-body image-drop">
+    <div class="news-container">
+      <div class="row">
+
+
+        <div appScrollIntoView *ngFor="let image of NewsInfo ; let i =index" class="card col-md-3 card-container"
+          style="animation: zoomAndSeparate 1s ease-out forwards;" (click)="GoToNewsDescription(image)">
+
+          <div class="card-img">
+            <!-- <img src="../../../assets/Images/place-holder-4.png" alt="News"> -->
+            <img [src]="NewsImages[i]" alt="News">
+          </div>
+
+          <div class="card-info ">
+            <p class="date">{{NewsInfo[i].date}}</p>
+            <p class="title">{{NewsInfo[i].news_Title}}</p>
+          </div>
+
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>

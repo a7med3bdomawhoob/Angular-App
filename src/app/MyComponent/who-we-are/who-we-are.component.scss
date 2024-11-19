@@ -1,0 +1,130 @@
+.page {
+  // padding: 4rem 6rem;
+}
+
+.page-header h2 {
+  padding: 4rem 6rem 0;
+  color: #0A3465;
+  text-align: left;
+  font-family: Inter;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.6875rem;
+}
+
+.page-header .img-cover {
+  width: 100%;
+  height: min-content;
+  overflow: hidden;
+  margin: 2rem 0 4rem 0;
+}
+
+.page-header .img-cover img {
+  width: 100%;
+}
+
+.page-body {
+  padding: 0 6rem;
+
+}
+
+.container {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.container p {
+  color: #555;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1rem;
+  /* 100% */
+}
+
+.container .counter {
+  justify-content: center;
+  align-items: center;
+  color: #002C5F;
+  text-align: center;
+  font-family: Inter;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3rem;
+}
+
+.about-namaa {
+  margin: 5rem 0;
+}
+
+.about-namaa h3 {
+  color: #0A3465;
+  text-align: left;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+.about-namaa p {
+  color: #000;
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.75rem;
+}
+
+.our-values {
+  margin: 5rem 0;
+}
+
+.our-values h3 {
+  color: #0A3465;
+  text-align: left;
+  font-family: Inter;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.6875rem;
+}
+
+.our-values p {
+  color: #000;
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.0625rem;
+}
+
+.iso {
+  margin: 5rem 0;
+}
+
+.iso img {
+  display: flex;
+  width: 10rem;
+  height: 10rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2rem 0;
+  transition: 0.5s;
+}
+
+.iso-logo img:hover {
+  transform: scale(1.1);
+}
+
+
+.t {
+  text-align: justify;
+  /* Justify text for even spacing */
+  margin: 0 auto;
+  /* Centers the block itself */
+  line-height: 1.5;
+}

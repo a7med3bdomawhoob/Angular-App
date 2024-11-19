@@ -1,0 +1,55 @@
+<div class="page image-zoom">
+
+    <div class="page-header">
+        <h2 *ngIf="lang=='en'" class=" pt-5 w m-auto text-center">{{Equipement_Name}}</h2>
+        <h2 class="direction" *ngIf="lang=='ar'" class=" pt-5 w m-auto text-center"> {{EquipementData[0].equipement_Name_ar}} </h2>
+
+        <div class="img-cover row ">
+            <!-- <img class="w-100 " height="800px" [src]="images[0]" alt="No Image" *ngIf="EquipmentImage"> -->
+            <img class="justify-content-center" [src]="images[0]" alt="No Image" *ngIf="EquipmentImage"
+                style=" height: auto; max-height: 1000px; object-fit: contain;">
+        </div>
+    </div>
+    <div class="page-body w  m-auto">
+        <div *ngIf="lang=='en'" class="row ">
+            <h2 class="d-flex justify-content-left m-2 ">{{Equipement_Name}} Overview </h2>
+            <p class="ms-4">{{Equipement_Description}}</p>
+        </div>
+
+        <div *ngIf="lang=='ar'" class="row ">
+            <h2 class="d-flex justify-content-left m-2  direction "> ملخص {{ EquipementData[0]. equipement_Name_ar}}
+            </h2>
+            <p class="ms-4 direction">{{ EquipementData[0]. equipement_Description_ar }}</p>
+        </div>
+
+
+
+        <div *ngIf="lang=='en'" class="row">
+            <h2 class="d-flex justify-content-left m-2 ">{{Equipement_Name}} Functions And Applications
+            </h2>
+            <p class="ms-4"> {{EquipementData[0].equipement_Functions}}</p>
+        </div>
+
+        <div *ngIf="lang=='ar'" class="row">
+            <h2 class="d-flex justify-content-left m-2 direction "> المهام والموقع {{EquipementData[0].
+                equipement_Name_ar}}
+            </h2>
+            <p class="ms-4 direction"> {{EquipementData[0].equipement_Functions_ar}}</p>
+        </div>
+
+
+        <div *ngIf="lang=='en'" class="row">
+            <h2 class="d-flex justify-content-left m-2 ">{{Equipement_Name}} Parts </h2>
+            <p class="ms-4">{{EquipementData[0].equipement_Parts}}</p>
+        </div>
+
+        <div *ngIf="lang=='ar'" class="row">
+            <h2 class="d-flex justify-content-left m-2 direction"> اجزاء {{ EquipementData[0]. equipement_Name_ar }}
+            </h2>
+            <p class="ms-4 direction">{{EquipementData[0].equipement_Parts_ar}}</p>
+        </div>
+
+
+    </div>
+
+</div>

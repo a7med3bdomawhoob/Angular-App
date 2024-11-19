@@ -1,0 +1,246 @@
+h1 {
+  padding: 0 1rem;
+  margin: 0;
+}
+
+h2 {
+  padding: 1rem;
+}
+
+mat-toolbar {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+mat-sidenav-container {
+  height: 100%;
+}
+
+// Move the content down so that it won't be hidden by the toolbar
+mat-sidenav {
+  padding-top: 3.5rem;
+
+  @media screen and (min-width: 600px) {
+    padding-top: 4rem;
+  }
+
+  .entry {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+  }
+}
+
+// Move the content down so that it won't be hidden by the toolbar
+mat-sidenav-content {
+  padding-top: 3.5rem;
+
+  @media screen and (min-width: 600px) {
+    padding-top: 4rem;
+  }
+}
+
+
+body {
+  position: relative;
+}
+
+.nav {
+  background-color: white;
+  // height: fit-content;
+  position: sticky;
+  height: 100px;
+  //display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0px 3px 13.1px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.papa .title .text-primary {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  // justify-content: center;
+  // margin-bottom: auto;
+}
+
+.transparent {
+  background-color: transparent;
+  opacity: 0.5;
+}
+
+
+.logo button {
+  background-color: rgb(255, 255, 255, 0);
+}
+
+
+
+.right {
+  position: absolute;
+  right: 50px;
+  //  background-color: rgb(151, 151, 199);
+}
+
+
+.left {
+  //background-color: chartreuse;
+  position: absolute;
+  left: 50px;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+  position: left;
+}
+
+.menu {
+  height: 50px;
+  width: 40px;
+  position: right;
+
+}
+
+.offcanvas-header {
+  padding-bottom: 0;
+  box-shadow: 0px 3px 13.1px 0px rgba(0, 0, 0, 0.15);
+  height: 100px;
+}
+
+.offcanvas hr {
+  margin: 0;
+  // box: shadow 5px;;
+}
+
+.offcanvas-header button {
+  background-color: white;
+  border: none;
+  width: 86px;
+  height: 86px;
+}
+
+.offcanvas-body button {
+  background-color: white;
+  color: #17395E;
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.6875rem;
+}
+
+.offcanvas-body button:focus {
+  //background-color: aqua;
+  color: #265D99;
+}
+
+.offcanvas-body button:hover {
+  //background-color: aqua;
+  color: #265D99;
+}
+
+
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.burger {
+  //  background-color:white;
+  font-size: larger;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  // border-color: blue;
+}
+
+.burger:hover {
+  background-color: black;
+
+}
+
+
+
+.burger img {
+  height: 40px;
+
+
+}
+
+.w-10 {
+  width: 20%;
+}
+
+//////////////////////////  hover  burger
+.offcanvas {
+  visibility: hidden;
+  transition: visibility 0.3s ease, transform 0.3s ease-in-out;
+}
+
+.offcanvas.show {
+  visibility: visible;
+  transform: translateX(0);
+}
+
+///////////////////////////
+/////////////////////////////////////////////////////
+
+
+
+.list-content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.list-content-visible {
+  max-height: 500px;
+  /* Adjust to match the height of your content */
+  opacity: 1;
+}
+
+.list-content-hidden {
+  max-height: 0;
+  opacity: 0;
+}
+
+
+
+button {
+  border: none;
+  font-size: 20px;
+}
+
+// li {
+//   font-size: 16px;
+// }
+
+
+
+
+.btn-lang {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.lang-icon {
+  width: 50px; /* Adjust width */
+  height: 30px; /* Adjust height */
+}
+
+.lang {
+  margin: 0 10px;
+}

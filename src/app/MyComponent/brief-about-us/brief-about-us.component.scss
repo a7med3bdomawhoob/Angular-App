@@ -1,0 +1,53 @@
+.more {
+  border: none;
+  display: flex;
+  justify-content: left;
+  padding: 0;
+}
+
+.more:hover p {
+  padding-left: 10px;
+  transition: all;
+  transition-duration: 1s;
+}
+
+.more p {
+  transition: padding-left 1s ease;
+
+}
+
+.row img {
+  height: 500px;
+}
+
+.text {
+  line-height: 1.8;
+  /* Adjust this value as needed */
+  margin-bottom: 20px;
+  /* Space below the paragraph */
+  color: #5B5B5B;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+section button {
+  background-color: transparent;
+  color: #002C5F;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+section button p {
+  // font-weight: bold;
+}
+
+// ::selection {
+//   color: red;
+//   background-color: purple;
+// }

@@ -1,0 +1,108 @@
+
+.wrap_h2 {
+  display: block;                 /* Ensure the element is a block to take up full width */
+  width: 100%;  
+  text-align: center;                  /* Take the full width of the parent */
+ //margin: 40px 100px 30px;            /* Center the text */
+  //padding: 10px 0;                /* Adds padding for spacing */
+}
+
+.wrap_h2 p,h3,h2 {
+  margin-top: 5px;                      /* Remove margin to avoid extra spacing */               /* Set the font size */
+ color: #0A3465;                   /* Set the text color */
+  word-wrap: break-word;          /* Ensure words break into multiple lines if necessary */
+  overflow-wrap: break-word;      /* Prevent overflow by wrapping text */
+  text-align: justify;
+}
+
+
+.page {
+  padding-left: 5%;
+}
+
+.page-header h2 {
+  color: #0A3465;
+  text-align: left;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+.page-header h3 {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+button {
+  border-style: none;
+
+}
+
+.card0 {
+  margin: 30px;
+}
+
+///////////////////
+///
+///
+/// /* Set up initial styles for the container */
+
+
+/* Apply scale transition to the image */
+.scale-on-hover {
+  transition: transform 0.3s ease;
+  /* Smooth scaling transition */
+}
+
+/* Scale the image on hover */
+.scale-on-hover:hover {
+  transform: scale(1.1);
+  /* Increase size by 10% and rotate by 6 degrees */
+  transition: transform 0.3s ease-in-out;
+  /* Smooth animation for both transformations */
+}
+
+
+img {
+
+  border-radius: 20px;
+  /* Gives rounded corners */
+}
+
+/////////////////////
+
+.image-zoom {
+  opacity: 0;
+  /* Initially invisible */
+  transform: scale(0);
+  /* Start from a very small scale (centered) */
+  animation: zoomAnimation 1s ease-out forwards;
+  /* Animation properties */
+  transform-origin: center center;
+  /* Ensure scaling happens from the center */
+}
+
+@keyframes zoomAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+    /* Start with the image very small */
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    /* End at the normal size */
+  }
+}
+
+
+.f{
+  background-color: red;
+}

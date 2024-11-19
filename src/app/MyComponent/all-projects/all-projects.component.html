@@ -1,0 +1,75 @@
+<div class="page">
+
+
+
+  <!-- <img src="https://localhost:44301/Projects/الصور-207.jpg" width="100" alt="Image from wwwroot" /> -->
+
+
+
+
+
+  <div class="page-header">
+    <h2  *ngIf="lang=='en'" >Projects</h2>
+    <h2 class="d-flex justify-content-end" dir="rtl "  *ngIf="lang=='ar'" >المشاريع</h2>
+
+
+  </div>
+
+
+
+
+ 
+
+
+ <!-- <div class="row image-drop">
+    <div class="col-md-2 projectss " *ngFor="let imageUrl of imageUrls; let i = index">
+      <button (click)="ImageDetails($event)">
+        <img width="200px" height="200px" class=" scale-on-hover" [src]="imageUrls[i]" alt="Image">
+      </button>
+      <p class="mt-3">{{AllProject[i]?.project_Name}}</p>
+    </div>
+  </div> 
+   -->
+
+
+
+<!-- 
+  <div class="row image-drop">
+    <div class="col-md-2 projectss " *ngFor="let pro of AllProject; let i = index">
+      <button (click)="ImageDetails(pro)">
+        <img width="200px" height="200px" class="scale-on-hover" [src]="ImgbaseUrl+'Projects/' + pro.image_Name" alt="Image">
+      </button>
+      <p  *ngIf="lang=='en'" class="mt-3">{{pro.project_Name}}</p>
+      <p  *ngIf="lang=='ar'"  class="mt-3">{{pro.project_Name_ar}}</p>
+    </div>
+  </div> -->
+
+
+  <div class="row image-drop">
+    <div class="col-md-2 projectss" *ngFor="let pro of AllProject; let i = index">
+      <button (click)="ImageDetails(pro)">
+        <img 
+          width="200px" 
+          height="200px" 
+          class="scale-on-hover" 
+          [src]="getSanitizedImageUrl(pro)" 
+          alt="Image"
+        />
+      </button>
+      <p *ngIf="lang == 'en'" class="mt-3">{{ pro.project_Name }}</p>
+      <p *ngIf="lang == 'ar'" class="mt-3">{{ pro.project_Name_ar }}</p>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+</div>
+
+
+
+

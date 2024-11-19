@@ -1,0 +1,172 @@
+.page {
+  // padding: 4rem 6rem;
+}
+
+.page-header h2 {
+  padding: 4rem 6rem 0;
+  color: #0A3465;
+  text-align: left;
+  font-family: Inter;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.6875rem;
+}
+
+.page-header .img-cover {
+  width: 100%;
+  height: min-content;
+  overflow: hidden;
+  margin: 2rem 0 4rem 0;
+}
+
+.page-header .img-cover img {
+  width: 100%;
+}
+
+// .page-header .img-cover {
+//   background-image: url('../../../assets/Images/news-img.png');
+//   background-repeat: no-repeat;
+//   width: 100%;
+//   height: 10rem;
+// }
+
+.page-body {
+  padding: 0 6rem;
+
+}
+
+.date h4 {
+  color: #212529;
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.6875rem;
+  margin-bottom: 0;
+}
+
+.date p {
+  color: #1E1E1E;
+  font-family: Inter;
+  font-size: 1.02931rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.38125rem;
+  text-transform: capitalize;
+}
+
+.share h4 {
+  margin-bottom: 0.25rem;
+}
+
+.share .icons a{
+  display: flex;
+  // justify-content: space-between;
+  margin-right: 0.5rem;
+}
+
+.row {
+  justify-content: space-between;
+}
+
+.page-body .description {
+  color: #212529;
+  font-family: Inter;
+  font-size: 1.05419rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  justify-content: center;
+
+}
+
+.related-news {
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+}
+
+.related-news h3 {
+  color: #0A3465;
+  text-align: left;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.6875rem;
+}
+
+.card {
+  display: flex;
+  border: none;
+  overflow: hidden;
+  border-radius: 3px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.card .card-img {
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 10rem;
+  transition-duration: 0.5s;
+
+
+}
+
+.card img:hover {
+  transform: scale(1.1);
+  overflow: hidden;
+  transition-duration: 0.5s;
+  transform-style: flat;
+  transition-property: all;
+
+}
+
+// .card-info {
+//   margin-top: auto;
+// }
+
+.card-info .date {
+  color: #848484;
+  font-family: Inter;
+  font-size: 0.82744rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.24119rem;
+  margin-bottom: 0;
+  margin-top: 7px;
+}
+
+.card-info .title {
+  color: #333;
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.24119rem;
+}
+
+
+
+.image-zoom {
+  opacity: 0; /* Initially invisible */
+  transform: scale(0); /* Start from a very small scale (centered) */
+  animation: zoomAnimation 1s ease-out forwards; /* Animation properties */
+  transform-origin: center center; /* Ensure scaling happens from the center */
+}
+
+@keyframes zoomAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0); /* Start with the image very small */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1); /* End at the normal size */
+  }
+}

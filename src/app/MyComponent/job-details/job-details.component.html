@@ -1,0 +1,88 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+  rel="stylesheet">
+
+
+<div class="page">
+  <h2>Senior Data Administrator</h2>
+
+  <div class="icons d-flex">
+
+
+    <div class="location ">
+      <div class="map-icon align-items-center">
+        <img src="../../../assets/Images/grommet-icons_map-location-down.svg" alt="map">
+        <p>
+          {{DetailedInfo.location}}
+        </p>
+      </div>
+    </div>
+
+    <div class="time">
+      <div class="clock-icon ">
+        <img src="../../../assets/Images/clock.svg" alt="clock">
+        <p>
+          {{DetailedInfo.time_Type}}
+        </p>
+      </div>
+    </div>
+
+
+  </div>
+
+  <main>
+    <div class="description">
+      <p class="mini-title">
+        Job Description:
+      </p>
+      <p class="description-body">
+        {{DetailedInfo.job_Description}}
+      </p>
+    </div>
+    <div class="description">
+      <p class="mini-title">
+        Responsibilities:
+      </p>
+      <div class="description-body">
+        <ul>
+          <ng-container *ngFor="let resIndex of [].constructor(getTotalResCount(Responsibilities[0])); let i = index">
+            <li *ngIf="getRes(Responsibilities[0], i)">
+              {{ getRes(Responsibilities[0], i) }}
+            </li>
+          </ng-container>
+          
+          
+
+
+
+        </ul>
+      </div>
+
+    </div>
+    <div class="description">
+      <p class="mini-title">
+        Requirements:
+      </p>
+      <div class="description-body">
+        <ul>
+
+
+          <ng-container *ngFor="let reqIndex of [].constructor(getTotalReqCount(Requirements[0])); let i = index">
+            <li *ngIf="getReq(Requirements[0], i) != null">
+              {{ getReq(Requirements[0], i) }}
+            </li>
+          </ng-container>
+
+
+        </ul>
+      </div>
+    </div>
+    <p>For interested talented candidate, kindly send your updated CV to <a
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=mawhoobahmed99@gmail.com" target="_blank">Namaa-Jobs</a>
+      , mention the Job
+      title
+      in the subject line</p>
+  </main>
+</div>

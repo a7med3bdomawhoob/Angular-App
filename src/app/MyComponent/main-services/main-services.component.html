@@ -1,0 +1,148 @@
+<div class="page   ">
+  <header>
+    <h2 *ngIf="lang=='en'">Service</h2>
+    <h2 dir="rtl " class=" d-flex justify-content-end w-100" *ngIf="lang=='ar'">الخدمات</h2>
+
+    <div class="row ">
+      <div class="col-md-12">
+        <p  *ngIf="lang=='en'"> Namaa Consult offers a diverse range of services, including Asset Management, which
+          optimizes the
+          performance and longevity of critical infrastructure; Infrastructure and Transportation, focusing on the
+          design and management of roads, highways, and transportation systems; Urban Planning, Architecture, and
+          Construction Engineering, which cover comprehensive planning, design, and execution of urban projects;
+          Management and Construction Supervision, ensuring high standards of project execution, risk management, and
+          quality control; and Information Technology, which integrates advanced tech solutions into infrastructure and
+          urban development projects.</p>
+
+        <p dir="rtl"  *ngIf="lang=='ar'">
+          تقدم شركة نُماء للاستشارات مجموعة واسعة ومتنوعة من الخدمات الهندسية والاستشارية التي تغطي عدة مجالات حيوية.
+          تشمل خدماتنا إدارة الأصول، التي تركز على تحسين أداء واستدامة البنية التحتية الأساسية وضمان طول عمرها التشغيلي.
+          كما نختص في البنية التحتية والنقل، حيث نقوم بتصميم وإدارة شبكات الطرق والطرق السريعة وأنظمة النقل المتكاملة.
+          بالإضافة إلى ذلك، تقدم نماء خدمات التخطيط الحضري والهندسة المعمارية والهندسة الإنشائية، التي تغطي كافة جوانب
+          التخطيط والتصميم والتنفيذ للمشاريع العمرانية. نوفر أيضًا خدمات الإشراف على المشاريع والإدارة لضمان تحقيق أعلى
+          معايير التنفيذ وإدارة المخاطر وضبط الجودة.
+
+          تتميز نمىاء بدمج تقنية المعلومات والذكاء الاصطناعي في مشاريع البنية التحتية والتطوير العمراني، حيث نستخدم هذه
+          التقنيات لتحليل البيانات، تحسين كفاءة إدارة المشاريع، والتنبؤ بالاحتياجات المستقبلية. علاوة على ذلك، لدينا
+          خبرة كبيرة في تطبيقات نظم المعلومات الجغرافية (GIS)، والتي تُمكننا من تقديم حلول متقدمة لتحليل وإدارة البيانات
+          المكانية، مما يدعم تخطيط المشاريع، إدارة الأصول، وتطوير استراتيجيات فعّالة للبنية التحتية والتنمية الحضرية.
+
+          تشمل خبراتنا مشاريع كبيرة مع جهات حكومية وشركات كبرى، حيث نلتزم بتقديم حلول مستدامة وفعالة تحقق أهداف عملائنا
+          وتساهم في تحسين جودة الحياة.</p>
+
+
+      </div>
+    </div>
+  </header>
+
+  <section>
+
+
+    <div class="container mt-5 mb-5 image-zoom" *ngFor="let info of ServiceData; let i = index">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="m-auto d-flex justify-content-center mb-5">
+            <div *ngIf="lang==='en'" class="g">
+              <h2>{{ info.name }}</h2>
+            </div>
+
+            <div *ngIf="lang==='ar'" class="g">
+              <h2 dir="rtl">{{ info.name_ar }}</h2>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-between ">
+        <!-- If the index is even, display text on the left and image on the right -->
+        <ng-container *ngIf="i % 2 === 0; else reverseLayout">
+          <div class="col-md-6 row justify-content-center align-items-center ">
+
+
+            <!-- <p class="text">{{ info.service_Description }} -->
+            <div *ngIf="lang==='en'" class="row justify-content-between align-items-center ">
+              <div class="">
+                <p  class="text  ">
+                  {{ info.service_Description.length > 200 ? (info.service_Description | slice:0:400) + '...' :
+                  info.service_Description }}
+                </p>
+                <button
+                  (click)="ShowServiceId(info.serviceId,info.service_Description,info.name,info.service_Description_ar,info.name_ar)"
+                  value="info.serviceId" class="">Read More</button>
+
+              </div>
+            </div>
+
+
+            <div *ngIf="lang==='ar'" class="row justify-content-between align-items-center ">
+              <div class="">
+                <p dir="rtl" class="text  ">
+                  {{ info.service_Description_ar.length > 200 ? (info.service_Description_ar | slice:0:400) + '...' :
+                  info.service_Description_ar }}
+                </p>
+                <button
+                  (click)="ShowServiceId(info.serviceId,info.service_Description_ar,info.name_ar,info.service_Description_ar,info.name_ar)"
+                  value="info.serviceId" class="">Read More</button>
+
+              </div>
+            </div>
+
+
+
+
+          </div>
+          <div class="col-md-6 row justify-content-center align-items-center   ImgCard ">
+            <!-- <img [src]="imageUrls[i]" alt="" class="img-fluid ">  //old -->
+
+            
+            <!-- <img style=" height: auto; max-height: 1000px; object-fit: contain;" class="scale-on-hover"
+              [src]="ImgbaseUrl+'Services/' + info.service_Image" alt="Image"> -->
+
+
+              <img style=" height: auto; max-height: 1000px; object-fit: contain;" class="scale-on-hover"
+              [src]="getSanitizedImageUrl(info)" alt="Image">
+
+              
+
+          </div>
+        </ng-container>
+
+        <!-- If the index is odd, display image on the left and text on the right -->
+        <ng-template class="" #reverseLayout>
+          <div class="col-md-6 row justify-content-between align-items-center ImgCard ">
+
+            <!-- <img [src]="imageUrls[i]" alt="" class="img-fluid">  old-->
+            <!-- <img class="scale-on-hover" [src]="ImgbaseUrl+'Services/' + info.service_Image" alt="Image"> -->
+            <img class="scale-on-hover"  [src]="getSanitizedImageUrl(info)" alt="Image">
+           
+
+
+          </div>
+          <div class="col-md-6 row justify-content-center align-items-right  " appScrollIntoView>
+
+            <div class="">
+              <p *ngIf="lang=='en'" appScrollIntoView class="text"> {{ info.service_Description.length > 200 ?
+                (info.service_Description | slice:0:300) +
+                '...' : info.service_Description }}
+              </p>
+              <p dir="rtl" *ngIf="lang=='ar'" appScrollIntoView class="text"> {{ info.service_Description_ar.length > 200 ?
+                (info.service_Description_ar | slice:0:300) +
+                '...' : info.service_Description_ar }}
+              </p>
+              <button appScrollIntoView
+                (click)="ShowServiceId(info.serviceId,info.service_Description,info.name,info.service_Description_ar,info.name_ar)"
+                value="info.serviceId" class="">Read More</button>
+            </div>
+
+
+
+          </div>
+        </ng-template>
+      </div>
+    </div>
+
+  </section>
+
+
+</div>

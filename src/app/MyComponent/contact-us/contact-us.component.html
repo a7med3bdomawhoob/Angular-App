@@ -1,0 +1,460 @@
+<div class="ig">
+
+  <!-- <p-dropdown
+    [options]="cities"
+    [(ngModel)]="selectedCity"
+    optionLabel="name"
+    placeholder="Select a City" /> -->
+
+
+
+
+  <div class="title d-flex justify-content-left  ">
+    <h1 *ngIf="lang=='en'">Our Branches</h1>
+    <h1 class="text-end w-100 m-5" *ngIf="lang=='ar'">فروعنا </h1>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="d-flex contact-us">
+    <button *ngIf="lang=='en'" class="contact-button d-flex" (click)="CheckEmail = false" type="" data-bs-toggle="modal"
+      data-bs-target="#exampleModal" (mouseover)="onMouseOver()" (mouseout)="onMouseOut()">
+      <img [src]="currentImage" alt="mail">
+      Contact Us
+    </button>
+
+
+    <button *ngIf="lang=='ar'" class="contact-button d-flex text-center " (click)="CheckEmail = false" type=""
+      data-bs-toggle="modal" data-bs-target="#exampleModal" (mouseover)="onMouseOver()" (mouseout)="onMouseOut()">
+      <img [src]="currentImage" alt="mail">
+      تواصل معنا
+    </button>
+
+
+  </div>
+
+
+
+
+
+  <div *ngIf="lang=='en'" class="parent mt-5 container ">
+    <div class="row ">
+      <div class="col-md-6  ">
+        <br>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+
+              <div class="card-body">
+                <h3 class="card-title">Cairo, Egypt</h3>
+                <p class="card-text">11 Ahmed Al Shatory St., Behind German School, Dokki , Giza.</p>
+                <i class="d-flex">
+                  <img class=" me-1" src="../../../assets/Images/telephone.svg" alt="Phone">
+                  <p class="m-0">: +202 33380314</p>
+                </i>
+                <i class="d-flex ">
+                  <img class=" me-1" src="../../../assets/Images/fax.svg" alt="Fax">
+                  <p class="m-0">: +202 33380319</p>
+                </i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+
+              <div class="card-body">
+                <h3 class="card-title">Giza, Egypt</h3>
+                <p class="card-text">11 Ahmed Al Shatory St., Behind German School, Dokki , Giza.</p>
+                <i class="d-flex">
+                  <img class=" me-1" src="../../../assets/Images/telephone.svg" alt="Phone">
+                  <p class="m-0">: +202 33380314</p>
+                </i>
+                <i class="d-flex">
+                  <img class=" me-1" src="../../../assets/Images/fax.svg" alt="Fax">
+                  <p class="m-0">: +202 33380319</p>
+                </i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+
+              <div class="card-body">
+                <h3 class="card-title">Jeddah, KSA</h3>
+                <p class="card-text">Fancy Eshbelia Tower, Al-Ruwais , King Abd Allah with Ha'il intersection.</p>
+                <i class="d-flex">
+                  <img class=" me-1" src="../../../assets/Images/telephone.svg" alt="Phone">
+                  <p class="m-0">: +966 126510388</p>
+                </i>
+                <i class="d-flex">
+                  <img class=" me-1" src="../../../assets/Images/fax.svg" alt="Fax">
+                  <p class="m-0">: +966 126510385</p>
+                </i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+
+              <div class="card-body">
+                <h3 class="card-title">Riyadh, KSA</h3>
+                <p class="card-text">Al Malaz, Al Ahsa Commercial Building, Al Ahsa St.</p>
+                <i class="d-flex">
+                  <img class=" me-1" src="../../../assets/Images/telephone.svg" alt="Phone">
+                  <p class="m-0">: +966 4532720 / 4531715</p>
+                </i>
+                <i class="d-flex">
+                  <img class=" me-1" src="../../../assets/Images/fax.svg" alt="Fax">
+                  <p class="m-0">: +966 4553831</p>
+                </i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+
+              <div class="card-body">
+                <h3 class="card-title">Dammam, KSA</h3>
+                <p class="card-text">2208 King Abdulaziz Road 1th Floor, 104 Office.</p>
+                <i class="d-flex">
+                  <img class=" me-1" src="../../../assets/Images/telephone.svg" alt="Phone">
+                  <p class="m-0">: +966 126510388</p>
+                </i>
+                <i class="d-flex">
+                  <img class=" me-1" src="../../../assets/Images/fax.svg" alt="Fax">
+                  <p class="m-0">: +966 126510385</p>
+                </i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+
+              <div class="card-body">
+                <h3 class="card-title">Madinah, KSA</h3>
+                <p class="card-text">Fancy Eshbelia Tower, Al-Ruwais , King Abd Allah with Ha'il intersection.</p>
+                <i class="d-flex">
+                  <img class=" me-1" src="../../../assets/Images/telephone.svg" alt="Phone">
+                  <p class="m-0">: +966 126510388</p>
+                </i>
+                <i class="d-flex">
+                  <img class=" me-1" src="../../../assets/Images/fax.svg" alt="Fax">
+                  <p class="m-0">: +966 126510385</p>
+                </i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div *ngIf="lang=='ar'" class="parent mt-5 container  ">
+    <div class="row  d-flex justify-content-end">
+      <div class="col-md-6  ">
+        <br>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+
+              <div class="card-body">
+                <h3 class="card-title">Cairo, Egypt</h3>
+                <p class="card-text">11 Ahmed Al Shatory St., Behind German School, Dokki , Giza.</p>
+                <i class="d-flex">
+                  <img class=" me-1" src="../../../assets/Images/telephone.svg" alt="Phone">
+                  <p class="m-0">: +202 33380314</p>
+                </i>
+                <i class="d-flex ">
+                  <img class=" me-1" src="../../../assets/Images/fax.svg" alt="Fax">
+                  <p class="m-0">: +202 33380319</p>
+                </i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+
+              <div class="card-body">
+                <h3 class="card-title">Giza, Egypt</h3>
+                <p class="card-text">11 Ahmed Al Shatory St., Behind German School, Dokki , Giza.</p>
+                <i class="d-flex">
+                  <img class=" me-1" src="../../../assets/Images/telephone.svg" alt="Phone">
+                  <p class="m-0">: +202 33380314</p>
+                </i>
+                <i class="d-flex">
+                  <img class=" me-1" src="../../../assets/Images/fax.svg" alt="Fax">
+                  <p class="m-0">: +202 33380319</p>
+                </i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+
+              <div class="card-body">
+                <h3 class="card-title">Jeddah, KSA</h3>
+                <p class="card-text">Fancy Eshbelia Tower, Al-Ruwais , King Abd Allah with Ha'il intersection.</p>
+                <i class="d-flex">
+                  <img class=" me-1" src="../../../assets/Images/telephone.svg" alt="Phone">
+                  <p class="m-0">: +966 126510388</p>
+                </i>
+                <i class="d-flex">
+                  <img class=" me-1" src="../../../assets/Images/fax.svg" alt="Fax">
+                  <p class="m-0">: +966 126510385</p>
+                </i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+
+              <div class="card-body">
+                <h3 class="card-title">Riyadh, KSA</h3>
+                <p class="card-text">Al Malaz, Al Ahsa Commercial Building, Al Ahsa St.</p>
+                <i class="d-flex">
+                  <img class=" me-1" src="../../../assets/Images/telephone.svg" alt="Phone">
+                  <p class="m-0">: +966 4532720 / 4531715</p>
+                </i>
+                <i class="d-flex">
+                  <img class=" me-1" src="../../../assets/Images/fax.svg" alt="Fax">
+                  <p class="m-0">: +966 4553831</p>
+                </i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+
+              <div class="card-body">
+                <h3 class="card-title">Dammam, KSA</h3>
+                <p class="card-text">2208 King Abdulaziz Road 1th Floor, 104 Office.</p>
+                <i class="d-flex">
+                  <img class=" me-1" src="../../../assets/Images/telephone.svg" alt="Phone">
+                  <p class="m-0">: +966 126510388</p>
+                </i>
+                <i class="d-flex">
+                  <img class=" me-1" src="../../../assets/Images/fax.svg" alt="Fax">
+                  <p class="m-0">: +966 126510385</p>
+                </i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+
+              <div class="card-body">
+                <h3 class="card-title">Madinah, KSA</h3>
+                <p class="card-text">Fancy Eshbelia Tower, Al-Ruwais , King Abd Allah with Ha'il intersection.</p>
+                <i class="d-flex">
+                  <img class=" me-1" src="../../../assets/Images/telephone.svg" alt="Phone">
+                  <p class="m-0">: +966 126510388</p>
+                </i>
+                <i class="d-flex">
+                  <img class=" me-1" src="../../../assets/Images/fax.svg" alt="Fax">
+                  <p class="m-0">: +966 126510385</p>
+                </i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+<div class="modalP  mt-5">
+  <!-- Modal -->
+  <div class="modal fade  w-100" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog  " style="max-width: 100%;">
+      <div class="modal-content bg-white" style="width: 100%;">
+        <div class="modal-header">
+
+          <h1 id="exampleModalLabel" class="modal-title fs-5">Have a Question? Send Us a Message </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body ">
+
+          <form #emailForm="ngForm" (ngSubmit)="sendEmail()">
+
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6  ">
+                  <div class="h">
+                    <label class="mt-3 " for="toEmail">Email</label>
+                    <div class="subject d-flex justify-content-center">
+                      <textarea class="w-100" id="toEmail" [(ngModel)]="toEmail" name="toEmail" required></textarea>
+                    </div>
+                    <!-- <label for="toEmail">Email:</label>
+                    <br>
+                    <input class="w-100" id="toEmail" [(ngModel)]="toEmail" name="toEmail" required /> -->
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="mt-3 " for="Company">Company</label>
+                  <div class="subject d-flex justify-content-center">
+                    <textarea class="w-100" id="Company" [(ngModel)]="Company" name="Company" required></textarea>
+                  </div>
+                  <!-- <label for="Company">Company:</label>
+                  <br>
+                  <input class="w-100" id="Company" [(ngModel)]="Company" name="Company" required /> -->
+                </div>
+
+              </div>
+
+
+
+
+
+
+
+
+              <div class="row mt-2">
+                <div class="col-md-6">
+                  <label class="mt-3 " for="Role">Role</label>
+                  <div class="subject d-flex justify-content-center">
+                    <textarea class="w-100" id="Role" [(ngModel)]="Role" name="Role" required></textarea>
+                  </div>
+                  <!-- <label for="Role">Role:</label>
+                  <br>
+                  <input class="w-100" id="Role" [(ngModel)]="Role" name="Role" required /> -->
+                </div>
+
+                <div class="col-md-6">
+                  <label class="mt-3 " for="Phone">Phone NO.</label>
+                  <div class="subject d-flex justify-content-center">
+                    <textarea class="w-100" id="Phone" [(ngModel)]="Phone" name="Phone" required></textarea>
+                  </div>
+                  <!-- <label for="Phone">Phone Number:</label>
+                  <br>
+                  <input class="w-100" id="Phone" [(ngModel)]="Phone" name="Phone" required /> -->
+                </div>
+
+              </div>
+
+              <div class="row mt-2">
+                <div class="col-md-6">
+                  <label class="mt-3 " for="First">First Name</label>
+                  <div class="subject d-flex justify-content-center">
+                    <textarea class="w-100" id="First" [(ngModel)]="First" name="First" required></textarea>
+                  </div>
+                  <!-- <label for="First">First Name:</label>
+                  <br>
+                  <input class="w-100" id="First" [(ngModel)]="First" name="First" required /> -->
+                </div>
+
+                <div class="col-md-6">
+                  <label class="mt-3 " for="Last">Last Name</label>
+                  <div class="subject d-flex justify-content-center">
+                    <textarea class="w-100" id="Last" [(ngModel)]="Last" name="Last" required></textarea>
+                  </div>
+                </div>
+                <!-- <label for="Last">Last Name:</label>
+                  <br>
+                  <input class="w-100" id="Last" [(ngModel)]="Last" name="Last" required />
+                </div> -->
+
+              </div>
+            </div>
+
+
+
+            <div class="row mt-2 ms-1 me-1">
+
+
+              <div class="col-md-12 ">
+                <label class="mt-3 " for="subject">Subject</label>
+                <div class="subject d-flex justify-content-center">
+                  <textarea id="subject" [(ngModel)]="subject" name="subject" required></textarea>
+                </div>
+              </div>
+
+
+              <div class="col-md-12 ">
+                <label class="mt-3 " for="body">Body</label>
+                <div class="message-body d-flex justify-content-center">
+                  <textarea id="body" [(ngModel)]="body" name="body" required></textarea>
+                </div>
+              </div>
+
+
+
+
+
+            </div>
+
+            <div class="submit d-flex justify-content-center align-items-center">
+              <button class="btn mt-2" type="submit">Submit</button>
+            </div>
+
+            <div>
+              <h2 *ngIf="CheckEmail" class="text-success d-flex justify-content-center ">Sent Successfully </h2>
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,121 @@
+<div class="page   ">
+
+  <div class="page-header">
+    <h2 *ngIf="lang=='en'">Equipments</h2>
+    <p *ngIf="lang=='en'" class="t">
+      At Namaa Consult, we are equipped with state-of-the-art technology to deliver high-quality services across all our
+      projects.
+      Our Mobile Imaging System allows for detailed visual documentation and analysis of infrastructure, enhancing
+      accuracy in assessments.
+      The Multi-Functional Vehicle supports various field operations, enabling us to perform multiple tasks efficiently.
+      We utilize Ground Penetrating Radar (GPR) to conduct in-depth underground surveys, ensuring precise mapping of
+      subsurface conditions.
+      Additionally, our Skid Friction Tester Vehicle measures road surface friction to assess safety conditions,
+      particularly in transportation and road asset management projects.
+      This advanced equipment ensures that we provide innovative, accurate, and reliable solutions.
+    </p>
+
+
+
+    <h2 *ngIf="lang=='ar'" class="direction  d-flex">المعدات </h2>
+    <p class="direction" *ngIf="lang=='ar'" class="t">
+
+      تمتلك شركة نماء مجموعة متطورة من المعدات التقنية المتخصصة التي تدعم عملياتها الاستشارية بشكل كبير. تشمل هذه
+      المعدات مركبة متعددة الوظائف (MFV) المزودة بأنظمة التصوير المتنقل، والرادار المخترق للأرض (GPR)، وتقنية LiDAR،
+      وأجهزة اختبار مقاومة الانزلاق، وأنظمة تحديد المواقع الجغرافية، بالإضافة إلى أجهزة تخزين ومعالجة البيانات المتقدمة.
+      هذه التقنيات تُمكّن نماء من تقديم حلول شاملة ودقيقة في مجالات مسح الطرق، تقييم البنية التحتية، ورسم الخرائط ثلاثية
+      الأبعاد. بفضل هذه المعدات المتطورة، تتمتع نماء بالقدرة على تقديم استشارات تعتمد على بيانات ميدانية عالية الدقة،
+      مما يساهم في تحسين جودة المشاريع، وزيادة الكفاءة، وتقليل المخاطر المرتبطة بأعمال البناء والصيانة. إن امتلاك هذه
+      الأدوات المتقدمة يُعزز من قدرة نماء على تلبية احتياجات العملاء بفعالية ويضمن تقديم خدمات استشارية مبنية على أحدث
+      التقنيات المتاحة.
+
+    </p>
+
+
+
+  </div>
+
+  <div class="page-body image-drop" *ngFor="let info of EquipementData ; let i = index">
+    <div class="row justify-content-between">
+      <ng-container class="" *ngIf="i % 2 === 0; else reverseLayout">
+
+        <h2 *ngIf="lang=='en'">{{EquipementData[i].equipement_Name}}</h2>
+        <h2 *ngIf="lang=='ar'">{{EquipementData[i].equipement_Name_ar}}</h2>
+        <div class="col-md-6 d-flex align-items-center justify-content-center">
+          <div class="description ">
+            <p *ngIf="lang=='en'">
+
+              {{EquipementData[i].equipement_Description.length > 200 ? (EquipementData[i].equipement_Description |
+              slice:0:400) + '...' :
+              EquipementData[i].equipement_Description }}
+            </p>
+
+
+            <p *ngIf="lang=='ar'">
+              {{EquipementData[i].equipement_Description_ar.length > 200 ? (EquipementData[i].equipement_Description_ar
+              |
+
+              slice:0:400) + '...' :
+              EquipementData[i].equipement_Description_ar }}
+            </p>
+
+
+            <button appScrollIntoView
+              (click)="ShowEquipementId(info.id,info.equipement_Description,info.equipement_Name,info.equipement_Functions,info.equipement_Parts,info.image_Name )">Read
+              More</button>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center">
+          <div class="picture d-flex justify-content-center">
+            <!-- <img [src]="imageUrls[i]" alt="pic"> -->
+            <!-- <img [src]="ImgbaseUrl+'Equipements/' + info.image_Name" alt="pic"> -->
+            <img   [src]="getSanitizedImageUrl(info)"  alt="pic">
+          
+          </div>
+        </div>
+      </ng-container>
+      <ng-template #reverseLayout>
+
+        <h2 *ngIf="lang=='en'">{{EquipementData[i].equipement_Name}}</h2>
+        <h2 *ngIf="lang=='ar'">{{EquipementData[i].equipement_Name_ar}}</h2>
+
+        <div class="col-md-6 d-flex justify-content-center">
+          <div class="picture d-flex justify-content-center" appScrollIntoView>
+
+
+            <!-- <img   [src]="imageUrls[i]" alt="pic"> -->
+            <!-- <img [src]="ImgbaseUrl+'Equipements/' + info.image_Name" alt="pic"> -->
+            <img   [src]="getSanitizedImageUrl(info)"  alt="pic">
+
+          </div>
+        </div>
+        <div class="col-md-6 d-flex align-items-center">
+          <div class="description ">
+
+            <p *ngIf="lang=='en'" appScrollIntoView>
+
+              {{EquipementData[i].equipement_Description.length > 200 ? (EquipementData[i].equipement_Description |
+              slice:0:400) + '...' :
+              EquipementData[i].equipement_Description }}
+            </p>
+
+
+            <p *ngIf="lang=='ar'" appScrollIntoView>
+              {{EquipementData[i].equipement_Description_ar.length > 200 ? (EquipementData[i].equipement_Description_ar
+              |
+
+              slice:0:400) + '...' :
+              EquipementData[i].equipement_Description_ar }}
+            </p>
+
+
+            <button appScrollIntoView
+              (click)="ShowEquipementId(info.id,info.equipement_Description,info.equipement_Name,info.equipement_Functions,info.equipement_Parts,info.image_Name )">Read
+              More</button>
+          </div>
+        </div>
+      </ng-template>
+    </div>
+  </div>
+
+</div>

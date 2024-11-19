@@ -1,0 +1,24 @@
+.papa
+{
+    overflow: hidden;
+    scrollbar-width: none;
+}
+
+
+
+.image-drop {
+    opacity: 0; /* Make the image invisible initially */
+    transform: translateY(-100%); /* Position the image above the screen */
+    animation: dropAnimation 1s ease-out forwards; /* Animation details */
+  }
+  
+  @keyframes dropAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%); /* Start from above the screen */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* End at the final position */
+    }
+}

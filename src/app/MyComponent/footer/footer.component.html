@@ -1,0 +1,51 @@
+<div class="section">
+
+
+
+  <div class="lower-footer">
+    <div  *ngIf="lang=='en'" class="website-routing">
+      <button (click)="AboutUs()">About Us</button>
+      <button (click)="GoToCareer()">Careers</button>
+      <button (click)="Projects()">Project</button>
+      <button (click)="ContactUs()">Contact Us</button>
+    </div>
+
+    <div  *ngIf="lang=='ar'" class="website-routing">
+      <button (click)="AboutUs()">عن الشركة  </button>
+      <button (click)="GoToCareer()">الوظائف</button>
+      <button (click)="Projects()">المشاريع</button>
+      <button (click)="ContactUs()"> تواصل معنا </button>
+    </div>
+
+
+    <div class="social-media-links">
+
+      <a href="https://www.facebook.com/gadibrahimg?mibextid=ZbWKwL" target="_blank">
+        <img src="../../assets/Images/soical-media-icons/Facebook.svg" alt="Facebook" >
+      </a>
+      <a href="https://twitter.com" target="_blank">
+        <img src="../../assets/Images/soical-media-icons/Twitter.svg" alt="Twitter" >
+      </a>
+      <a href="https://www.linkedin.com/company/namaa-consult/" target="_blank">
+        <img src="../../assets/Images/soical-media-icons/Linkedin.svg" alt="LinkedIn" >
+      </a>
+      <!-- <a href="https://instagram.com" target="_blank">
+        <img src="../../assets/Images/soical-media-icons/Instagram.svg" alt="Instagram" >
+      </a>
+      <a href="https://youtube.com" target="_blank">
+        <img src="../../assets/Images/soical-media-icons/YouTube.svg" alt="YouTube" >
+      </a> -->
+
+    </div>
+
+
+
+    <hr>
+    <div class="copy-right">
+      <p>
+        &copy; 2024 Namaa. All Rights Reserved
+      </p>
+    </div>
+  </div>
+
+</div>

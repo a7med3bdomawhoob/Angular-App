@@ -1,0 +1,75 @@
+<section>
+  <div class="container mt-5 mb-5 ">
+    <div class="row justify-content-between">
+      <div class="col-md-6   row justify-content-center align-items-center">
+        <img src="../assets/Images/R.jfif " alt="">
+      </div>
+
+      <div class="col-md-6  row justify-content-center align-items-center">
+
+        <p *ngIf="lang=='en'" class="text">At Namaa, we harness the latest technology, build trust in our client
+          relationships, and focus
+          on client-centric outcomes.
+          We are dedicated to serving communities, delivering sustainable solutions, upholding integrity, and fostering
+          knowledge transfer.
+
+          Our approach is driven by creative thinking and innovation in every project we undertake. We strive to lead
+          locally and expand our impact regionally.
+          Our core values place the well-being and fulfillment of our team members and the success of our clients at the
+          forefront of everything we do.
+          <br>
+          <button (click)="GoToAbout()" class=" more "> More About Us &nbsp; <p>&gt;</p></button>
+        </p>
+
+
+        <p *ngIf="lang=='ar'" class="text">
+          بالنيابة عن فريق العمل في شركة نماء، بما في ذلك الخبراء والمهندسين والفنيين والإداريين، يُشرفنا أن نقدم لكم
+          دليلًا
+          موجزًا للتعريف بشركتنا وقادتها ورؤيتنا لتحقيق التكامل الإبداعي بين مجالات الهندسة، من أجل تقديم حلول رائدة
+          ومبتكرة.
+          <br>
+          <button (click)="GoToAbout()" class=" more "> More About Us &nbsp; <p>&gt;</p></button>
+        </p>
+
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+<section>
+
+  <div class="container mt-5 mb-5 ">
+    <div class="row justify-content-between">
+
+      <div *ngIf="lang=='en'" class="col-md-6  row justify-content-center align-items-center">
+        <p class="text">Namaa Consult offers a diverse range of services, including Asset Management, which optimizes
+          the performance and longevity of critical infrastructure; Infrastructure and Transportation, focusing on the
+          design and management of roads, highways, and transportation systems; Urban Planning, Architecture, and
+          Construction Engineering,...
+          <br>
+          <button (click)="MainServices()" class=" more ">Explore more Services &nbsp;<p>&gt;</p></button>
+        </p>
+      </div>
+
+
+
+      <div *ngIf="lang=='ar'" class="col-md-6  row justify-content-center align-items-center">
+        <p class="text">تفاصيل عن الشركة 
+          <br>
+          <button (click)="MainServices()" class=" more ">تصفح خدمات اكثر  &nbsp;<p>&gt;</p></button>
+        </p>
+      </div>
+
+
+
+      <div class="col-md-6   row justify-content-center align-items-center">
+        <img src="../assets/Images/holland2-pp__FillWzEwMDAsMTAwMF0.jpg" alt="">
+      </div>
+
+    </div>
+  </div>
+</section>

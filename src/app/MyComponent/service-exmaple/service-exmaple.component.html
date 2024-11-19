@@ -1,0 +1,109 @@
+<div class="page image-zoom">
+
+  <div class="page-header">
+    <h2 *ngIf="lang=='en'" class="spaceLines">{{ServiceData[0].name}}</h2>
+    <h2 *ngIf="lang=='ar'" class="spaceLines">{{ServiceData[0].name_ar}}</h2>
+    <div *ngFor="let imageUrl of ServiceImage; let i = index">
+      <img class="img-fluid" [src]="imageUrl" alt="Image {{ i }}">
+    </div>
+
+    <!-- Service description -->
+    <p *ngIf="lang=='en'">{{ServiceData[0].service_Description}}</p>
+    <p *ngIf="lang=='ar'">{{ServiceData[0].service_Description_ar}}</p>
+  </div>
+
+  <div class="page-body">
+    <h2 *ngIf="lang=='en'">Areas</h2>
+    <h2 *ngIf="lang=='en'"></h2>
+    <!-- first row -->
+
+
+
+
+    <!-- image.component.html -->
+    <!-- <div *ngIf="images.length > 0; else noImages" class="row">
+
+          <div *ngFor="let image of images ; let i=index" class="card  col-md-6 justify-content-center align-items-center">
+            <img  width="100%" height="500px " [src]="image" alt="Area Image" />
+
+            <p class="mt-2">{{AreaDataByServiceId[i].name}}</p>
+
+            <button (click)="allProjects(AreaDataByServiceId[i].areaId)">See Projects</button>
+          </div>
+
+        </div> -->
+
+
+    <div *ngIf="images.length > 0; else noImages" class="row">
+      <div *ngFor="let info of AreaDataByServiceId ; let i=index"
+        class="card  col-md-6 justify-content-center align-items-center">
+        <!-- <img  width="100%" height="500px " [src]="image" alt="Area Image" /> -->
+        <!-- <img width="100%" height="500px " [src]="ImgbaseUrl+'Areas/' + info.area_Image" alt="Image"> -->
+
+        <img width="100%" height="500px " [src]="getSanitizedImageUrl(info)" alt="Image">
+
+        <p *ngIf="lang=='en'" class="mt-2">{{AreaDataByServiceId[i].name}}</p>
+        <p *ngIf="lang=='ar'" class="mt-2">{{AreaDataByServiceId[i].name_ar}}</p>
+
+        <button  *ngIf="lang=='en'" (click)="allProjects(AreaDataByServiceId[i].areaId)">See Projects</button>
+        <button  *ngIf="lang=='ar'" (click)="allProjects(AreaDataByServiceId[i].areaId)">رؤية المشروعات </button>
+      </div>
+
+    </div>
+
+
+    <ng-template #noImages>
+      <p>No images available.</p>
+    </ng-template>
+
+
+
+
+
+
+
+
+
+    <!-- <div class="card col-md-6 justify-content-center align-items-center">
+        <img src="../../../assets/Images/place-holder-1.png" alt="pic">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At fugiat qui ullam eius, cupiditate odit
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti quibusdam tempora sequi rerum veniam eaque
+          necessitatibus reprehenderit, explicabo beatae eos, corrupti omnis assumenda a facere ad ipsa, itaque ex
+          dolore.
+        </p>
+        <button (click)="allProjects()">See Projects</button>
+      </div> -->
+
+
+
+
+    <!-- second row
+    <div class="row justify-content-between">
+
+      <div class="card col-md-6 justify-content-center align-items-center">
+        <img src="../../../assets/Images/place-holder-1.png" alt="pic">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At fugiat qui ullam eius, cupiditate odit
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti quibusdam tempora sequi rerum veniam eaque
+          necessitatibus reprehenderit, explicabo beatae eos, corrupti omnis assumenda a facere ad ipsa, itaque ex
+          dolore.
+        </p>
+        <button (click)="allProjects()">See Projects</button>
+      </div>
+
+      <div class="card col-md-6 justify-content-center align-items-center">
+        <img src="../../../assets/Images/place-holder-1.png" alt="pic">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At fugiat qui ullam eius, cupiditate odit
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti quibusdam tempora sequi rerum veniam eaque
+          necessitatibus reprehenderit, explicabo beatae eos, corrupti omnis assumenda a facere ad ipsa, itaque ex
+          dolore.
+        </p>
+        <button (click)="allProjects()">See Projects</button>
+      </div>
+
+
+    </div> -->
+
+
+  </div>
+
+</div>

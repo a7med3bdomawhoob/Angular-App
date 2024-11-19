@@ -1,0 +1,34 @@
+<div class="all mt-5">
+  <div class="p d-flex justify-content-center m-auto">
+    <h2 *ngIf="lang=='en'">News</h2>
+    <h2 *ngIf="lang=='ar'">الاخبار</h2>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="slider-container ">
+  <button class="slider-btn" (click)="scrollLeft()">&lt;</button>
+
+  <div class="slider" #slider>
+    <div class="slider-wrapper">
+      <div class="card c" *ngFor="let Img of NewsImages;let i=index">
+        <div class="papaOfImg">
+          <button (click)="ShowNews(NewsInfo[i].id)">
+            <img [src]="Img" alt="Card Image">
+          </button>
+        </div>
+        <p class="text-primary mt-2">{{ NewsInfo[i].news_Title }}</p>
+        <!-- <h3 class="text-primary mt-1">{{ NewsInfo[i].news_Description }}</h3> -->
+      </div>
+    </div>
+  </div>
+
+  <button class="slider-btn" (click)="scrollRight()">&gt;</button>
+</div>

@@ -1,0 +1,50 @@
+<div class="page image-zoom">
+
+
+
+    <div class="page-header">
+
+
+<div class="wrap_h2">
+    <h2 *ngIf="lang=='en'" class="ms-5 mt-5">{{AreaInfo.name}}</h2>
+    <h2   dir="rtl" class=" mt-5 me-5   d-flex "  *ngIf="lang=='ar'" >{{AreaInfo.name_ar}}</h2>
+</div>
+<div class="wrap_h2">
+    <h3 *ngIf="lang=='en'" class="ms-5">{{AreaInfo.area_Description}}</h3>
+    <h3 class="d-flex justify-content-end" *ngIf="lang=='ar'" class="ms-5">{{AreaInfo.area_Description_ar}}</h3>
+</div>
+
+    <h2 *ngIf="lang=='en'" class="m-5">Projects</h2>
+    <h2 dir="rtl" class=" mt-5 me-5   d-flex " *ngIf="lang=='ar'" >المشاريع</h2>
+
+  </div>
+
+  <!-- <div class="row card0">
+    <div class="col-md-2 scale-on-hover " *ngFor="let imageUrl of Images; let i = index">
+      <button (click)="ImageDetails(ProjectData[i].projectId)">
+        <img class="img-fluid" [src]="imageUrl" alt="Image">
+      </button>
+      <p class="">{{ ProjectData[i].project_Name }}</p> 
+    </div>
+
+    </div> -->
+
+
+
+      <div class="row card0">
+    <div class="col-md-3 scale-on-hover " *ngFor="let info of ProjectData; let i = index">
+      <button (click)="ImageDetails(ProjectData[i].projectId)">
+        <!-- <img  height="200px" class="scale-on-hover w-100" [src]="ImgbaseUrl+ 'Projects/'+info.image_Name" alt="Image">   -->
+
+        <img  height="200px" class="scale-on-hover w-100" [src]="getSanitizedImageUrl(info)" alt="Image">  
+      
+      </button>
+      <p  *ngIf="lang=='en'"  class="mt-2 ">{{ info.project_Name }} </p>  
+      <p  *ngIf="lang=='ar'"  class="mt-2 ">{{ info.project_Name_ar }} </p>  
+    </div>
+
+    </div>
+
+
+    
+</div>

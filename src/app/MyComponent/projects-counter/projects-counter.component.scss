@@ -1,0 +1,101 @@
+.c {
+  // background-color: rgb(8, 8, 75);
+  color: white;
+  height: 200px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 0.47863rem;
+  background: #002C5F;
+}
+
+.papa {
+  position: relative;
+  height: 550px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(47, 37, 85, 0.5);
+}
+
+.papa::before {
+  content: "";
+  background-image: url('../../../assets/Images/project-counter-cover.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  /* Adjust the opacity level */
+  z-index: -1;
+  /* Ensure the background image stays behind the content */
+}
+
+
+.parent {
+  height: 100%;
+}
+
+.row .col-md-6 .font {
+  color: #002C5F;
+  text-align: center;
+  font-family: "Font Awesome 5 Free";
+  font-size: 50.025px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 50.025px;
+  display: inline-flex;
+  height: 77.181px;
+  padding: 7.146px;
+  justify-content: center;
+  align-items: center;
+  gap: 7.146px;
+  flex-shrink: 0;
+  border-radius: 142.928px;
+  border: 0.715px solid #002C5F;
+  background: #FFF;
+  box-shadow: -1px 1px 3px 0px #17395E inset, 1px -1px 3px 0px #17395E inset;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.info {
+
+}
+
+.description {
+  height: auto;
+}
+
+.p p{
+  display: flex;
+  justify-content: center;
+}
+
+.counter {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  // margin-top: 20px;
+}
+
+.plus {
+  font-size: 48px;
+  // font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  // margin-top: auto;
+  // margin-bottom: auto;
+}
+
+.papa img {
+  // opacity: 0.5;
+}

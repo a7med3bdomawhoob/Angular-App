@@ -1,0 +1,210 @@
+<div class="nav">
+
+  <div class="left">
+    <div class="Papa d-flex">
+      <div class="logo ">
+        <button (click)="LandingPage()">
+          <img src="../../../assets/Images/Namaa-logo.png" alt="Namaa for Engineering consaltant" class="logo ">
+        </button>
+      </div>
+
+
+<!-- <div class="lang ms-3 d-flex justify-content-center align-items-center" >
+  <div class="ar ">
+    <button (click)="langFun('ar')">
+      arabic
+    </button>
+  </div>
+
+
+  <div class="en ">
+    <button (click)="langFun('en')" >
+      english </button>
+  </div>
+</div> -->
+
+
+
+
+<div class="lang ms-3 d-flex justify-content-center align-items-center">
+
+  <div class="en">
+    <button (click)="langFun('en')" class="btn-lang">
+      <img  src="../../../assets/en.png" alt="English" class="lang-icon"> 
+      <!-- Replace with your English logo path -->
+    </button>
+  </div>
+
+
+  <div class="ar">
+    <button (click)="langFun('ar')" class="btn-lang">
+      <img src="../../../assets/ar.png" alt="Arabic" class="lang-icon"> 
+      <!-- Replace with your Arabic logo path -->
+    </button>
+  </div>
+
+
+
+  
+</div>
+
+
+
+
+
+
+      <div class="titile     d-flex justify-content-center align-items-center">
+        <!-- <h1 class="text-primary"> Namaa</h1> -->
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="right">
+    <div class="menu  ">
+      <!-- <a class="btn burger " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                  aria-controls="offcanvasExample">
+                  <div class="d-flex justify-content-center align-items-center ">
+                      <img class="w-100  " src="assets\Images\menu (1).png" alt="">
+                  </div>
+
+              </a> -->
+
+      <div class="btn burger" (mouseenter)="openSidebar()" (mouseleave)="closeSidebar()">
+        <div class="d-flex justify-content-center align-items-center">
+          <img class="w-100" src="../../../assets/Images/menu.png" alt="">
+        </div>
+      </div>
+
+
+
+      <!-- <div class="offcanvas offcanvas-end    w-20 " tabindex="-1" id="offcanvasExample"
+                  aria-labelledby="offcanvasExampleLabel">
+                  <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div> -->
+
+
+      <div class="offcanvas offcanvas-end w-20" tabindex="-1" [ngClass]="{'show': isSidebarOpen}" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel" (mouseenter)="keepSidebarOpen()" (mouseleave)="closeSidebar()">
+        <div class="offcanvas-header">
+          <button class="offcanvas-logo" (click)="LandingPage()"><img src="../../../assets/Images/Namaa-logo.png"
+              alt="Namaa-logo"></button>
+          <!-- <img src="" alt="" class="offcanvas-title" id="offcanvasExampleLabel"> -->
+          <!-- <button type="button" class="btn-close" (click)="closeSidebar()" aria-label="Close"></button> -->
+        </div>
+        <hr>
+
+        <div class="offcanvas-body  ">
+          <div>
+            <div class="ParentMenu container  ">
+
+              <ul>
+                <br>
+                <button class="TitleList mt-2" (click)="toggleList()">Who we are</button>
+                <div [ngClass]="{'list-content-visible': isListVisible, 'list-content-hidden': !isListVisible}"
+                  class="list-content">
+                  <div class="2 d-flex justify-content-left">
+                    <button class="btn ps-5 pe-5" (click)="GoToWhoWeAre()">About Us</button>
+                  </div>
+
+                  <div class="2 d-flex justify-content-left">
+                    <button class="btn ps-5 pe-5" (click)="GoToOurLeadership()">Our Leadership</button>
+
+                  </div>
+
+                  <div class="2 d-flex justify-content-left">
+                    <button class="btn ps-5 pe-5" (click)="NewsPage()">News</button>
+                  </div>
+
+                </div>
+
+
+                <button class="TitleList mt-5" (click)="toggleList2()">What we do</button>
+
+                <div [ngClass]="{'list-content-visible': isListVisible2, 'list-content-hidden': !isListVisible2}"
+                  class="list-content">
+                  <div class="2 d-flex justify-content-left">
+                    <button class="btn ps-5 pe-5" (click)="MainServices()">Services</button>
+                  </div>
+
+                  <div class="2 d-flex justify-content-left">
+                    <button class="btn ps-5 pe-5" (click)="GoToProjects()">Projects</button>
+                  </div>
+
+                  <div class="2 d-flex justify-content-left">
+                    <button class="btn ps-5 pe-5" (click)="GoToEquipment()">Equipments</button>
+                  </div>
+
+
+                </div>
+
+
+
+
+
+                <div class="2 d-flex justify-content-left mt-5">
+                  <button class="" (click)="Governance()">Governence</button>
+                </div>
+
+
+
+
+                <div class="2 d-flex justify-content-left mt-5">
+                  <button class="" (click)="GoToCareer()">Careers</button>
+                </div>
+
+
+                <div class="2 d-flex justify-content-left mt-5">
+                  <button class="" (click)="ContactUs()">Contact Us</button>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <!-- <div class="2 d-flex justify-content-center">
+                            <li><button class="btn ps-5  pe-5" (click)="LandingPage()">LandingPage
+                            </button></li>
+                          </div> -->
+
+
+
+
+
+
+              </ul>
+
+            </div>
+
+
+          </div>
+          <div class="dropdown mt-3">
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="b  w-100 parentCenter">
+
+  </div>
+
+
+
+
+</div>
+
+
+<router-outlet></router-outlet>

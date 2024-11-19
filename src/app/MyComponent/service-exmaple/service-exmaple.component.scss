@@ -1,0 +1,187 @@
+// .wrap_h2 {
+//   display: block;
+//   /* Ensure the element is a block to take up full width */
+//   width: 100%;
+//   text-align: center;
+//   /* Take the full width of the parent */
+//   //margin: 40px 100px 30px;            /* Center the text */
+//   //padding: 10px 0;                /* Adds padding for spacing */
+// }
+
+// .wrap_h2 h2 {
+//   margin-top: 20px;
+//   /* Remove margin to avoid extra spacing */
+//   font-size: 2rem;
+//   /* Set the font size */
+//   color: #0A3465;
+//   /* Set the text color */
+//   font-weight: bold;
+//   /* Make the text bold */
+//   word-wrap: break-word;
+//   /* Ensure words break into multiple lines if necessary */
+//   overflow-wrap: break-word;
+//   /* Prevent overflow by wrapping text */
+// }
+
+
+.page {
+  // padding: 5% 8%;
+  overflow: hidden;
+}
+
+.page-header {
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+.page-header h2 {
+  color: #0A3465;
+  text-align: left;
+  font-family: Inter;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2rem;
+  // padding: 5% 0 0 8%;
+  padding-left: 8%;
+  text-align: justify;
+}
+
+.page-header img {
+  display: flex;
+  width: 100%;
+  height: 50rem;
+  overflow: hidden;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.page-header p {
+  padding-left: 8%;
+  padding-right: 8%;
+  color: #000;
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.5rem;
+  text-align: justify;
+}
+
+.page-body {
+  padding-left: 8%;
+  padding-right: 8%;
+  margin: 2% 0;
+}
+
+.page-body h2 {
+  color: #0A3465;
+  text-align: left;
+  font-family: Inter;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+
+.page-body .row .card {
+  display: flex;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+
+
+}
+
+.page-body .row .card button {
+  display: flex;
+  width: 7rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 0.5rem;
+  background: #17395E;
+  color: white;
+  margin-top: 20px;
+  align-items: center;
+  margin-right: auto;
+  transition: 0.3s;
+}
+
+.page-body .row .card button:hover {
+  background: #265D99;
+}
+
+.page-body .row .card .CardImg {
+  overflow: hidden;
+  width: 100%;
+}
+
+.page-body .row .card .CardImg img {
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.page-body .row .card img:hover {
+  transform: scale(1.05);
+
+}
+
+.page-body .row .card p {
+  align-self: stretch;
+  color: #000;
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: justify;
+}
+
+.page-body .row .card p:hover {
+  color: #17395E;
+  text-align: justify;
+}
+
+
+
+.image-zoom {
+  opacity: 0;
+  /* Initially invisible */
+  transform: scale(0);
+  /* Start from a very small scale (centered) */
+  animation: zoomAnimation 1s ease-out forwards;
+  /* Animation properties */
+  transform-origin: center center;
+  /* Ensure scaling happens from the center */
+}
+
+@keyframes zoomAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+    /* Start with the image very small */
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    /* End at the normal size */
+  }
+}
+
+
+img {
+  transition: all;
+  transition-duration: 1s;
+}
+

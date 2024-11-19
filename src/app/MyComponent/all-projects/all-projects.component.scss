@@ -1,0 +1,185 @@
+.page {
+  padding: 4rem 6rem;
+ // height: 100vh;
+}
+
+.page-header h2 {
+  color: #0A3465;
+  text-align: left;
+  font-family: Inter;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.6875rem;
+}
+
+.page-header .filter {
+  display: flex;
+  // justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  // justify-content: space-between;
+}
+
+.page-header select {
+  margin: 1.5rem 0.5rem 3rem 0;
+  width: 10rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: 1px solid #E6E6E6;
+  background: #FFF;
+  cursor: pointer;
+}
+
+.page-header option {}
+
+
+// .page-header button {
+//   // margin: auto;
+//   margin-right: 1rem;
+//   width: 5rem;
+//   height: 2rem;
+//   padding: 0.5rem;
+//   text-align: center;
+
+//   flex-shrink: 0;
+//   border-radius: 0.5rem;
+//   border: 1px solid #C1C1C1;
+//   background: #0A3465;
+//   color: white;
+// }
+
+.page-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.page-body .projects-container {
+  display: flex;
+  // width: 100%;
+  align-items: center;
+  align-content: center;
+  text-align: left;
+  flex-wrap: wrap;
+  // margin: auto;
+  justify-content: center;
+
+}
+
+.page-body .projects-container .card {
+  display: flex;
+  width: 18rem;
+  height: 15rem;
+  // flex-direction: column;
+  // align-items: flex-start;
+  gap: 0.5rem;
+  flex-shrink: 0;
+  overflow: hidden;
+  border: none;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.projects-container .card .card-img {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.projects-container .card .card-img img {
+  width: 20rem !important;
+  height: 15rem !important;
+}
+
+.projects-container .card .card-img img:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s ease-in-out;
+}
+
+button {
+  border: none;
+  border-style: none;
+  background-color: transparent;
+}
+
+
+/* Set up initial styles for the container */
+.projectss {
+  text-align: start;
+  /* Center content */
+  overflow: hidden;
+  margin: 20px;
+
+  // background: linear-gradient(to right, #f0f4f8, #d9e2ec); /* Light blue-gray tones */
+  padding: 20px;
+  /* Adds some padding around the image */
+  border-radius: 10px;
+  /* Gives rounded corners */
+}
+
+.projectss p {
+  color: #212529;
+  text-align: left;
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.24119rem;
+}
+
+/* Apply scale transition to the image */
+.scale-on-hover {
+  transition: transform 0.3s ease;
+  /* Smooth scaling transition */
+}
+
+/* Scale the image on hover */
+//Ahmed Resolve Test
+.scale-on-hover:hover {
+  transform: scale(1.1);
+  /* Increase size by 10% and rotate by 6 degrees */
+  transition: transform 0.3s ease-in-out;
+  /* Smooth animation for both transformations */
+}
+
+img {
+
+  border-radius: 5px;
+  /* Gives rounded corners */
+}
+
+
+////////////////////////
+///
+/// /* Apply this to the container of your images */
+.image-drop {
+
+  opacity: 0;
+  /* Initially invisible */
+  transform: scale(0);
+  /* Start from a very small scale (centered) */
+  animation: zoomAnimation 1s ease-out forwards;
+  /* Animation properties */
+  transform-origin: center center;
+  /* Ensure scaling happens from the center */
+}
+
+@keyframes zoomAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+    /* Start with the image very small */
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    /* End at the normal size */
+  }
+}
